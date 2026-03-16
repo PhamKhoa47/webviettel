@@ -232,6 +232,7 @@ export default function InternetViettel() {
                   alt="Dak Lak Network" 
                   className="relative rounded-[2rem] shadow-2xl border border-slate-200"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
                 />
                 <div className="absolute -bottom-8 -right-8 glass-card p-8 border-viettel-red/30 max-w-xs">
                   <div className="flex items-center space-x-3 mb-4">

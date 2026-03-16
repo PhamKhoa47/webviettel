@@ -254,6 +254,7 @@ export default function Home() {
                 alt="Support Team" 
                 className="relative z-10 rounded-[3rem] shadow-2xl grayscale group-hover:grayscale-0 transition-all duration-700 border border-slate-200"
                 referrerPolicy="no-referrer"
+                loading="lazy"
               />
               <div className="absolute -bottom-10 -left-10 glass-card p-6 border-viettel-red/30 animate-float">
                 <div className="text-4xl font-black text-viettel-red">24/7</div>

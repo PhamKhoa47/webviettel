@@ -94,6 +94,7 @@ export default function EInvoice() {
                   alt="Digital Invoice" 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-50/80 via-transparent to-transparent" />
               </div>
