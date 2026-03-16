@@ -1,67 +1,107 @@
 export const BRAND = {
   name: 'Viettel Đắk Lắk',
-  phone: '0989113602',
+  phone: '0989.113.602',
   email: 'phamkhoaviettel@gmail.com',
-  address: '48 Lý Trọng, Phường Tân An, Tỉnh Đắk Lắk',
-  workingHours: 'Thứ 2 - Thứ 7: 08:00 - 17:30',
+  address: 'Số 48 Lý Tự Trọng, Phường Tân An, Tỉnh Đắk Lắk, Việt Nam',
+  hotlineSupport: '1800.8119',
+  workingHours: 'Thứ 2 - Chủ Nhật: 07:30 - 20:00',
+  representative: 'Phạm Văn Khoa',
+  position: 'Chuyên viên Tư vấn Giải pháp Doanh nghiệp',
 };
+
+export const DAK_LAK_DISTRICTS = [
+  'TP. Buôn Ma Thuột', 'Thị xã Buôn Hồ', 'Huyện Ea H\'leo', 'Huyện Ea Súp', 'Huyện Buôn Đôn', 
+  'Huyện Cư M\'gar', 'Huyện Krông Búk', 'Huyện Krông Năng', 'Huyện Ea Kar', 'Huyện M\'Đrắk', 
+  'Huyện Krông Bông', 'Huyện Krông Pắc', 'Huyện Krông Ana', 'Huyện Lắk', 'Huyện Cư Kuin'
+];
 
 export const SERVICES = [
   {
     id: 'internet',
-    title: 'Internet Viettel',
-    description: 'Cáp quang tốc độ cao, ổn định nhất Việt Nam.',
+    title: 'Internet Cáp Quang',
+    description: 'Hạ tầng cáp quang Gpon hiện đại, tốc độ lên đến 1Gbps, ổn định và bảo mật tuyệt đối.',
     icon: 'Wifi',
     path: '/internet-viettel',
+    accent: 'viettel-red',
   },
   {
     id: 'digital-signature',
-    title: 'Chữ ký số',
-    description: 'Kê khai thuế, bảo hiểm xã hội, hải quan điện tử.',
+    title: 'Chữ Ký Số Viettel-CA',
+    description: 'Giải pháp chứng thực chữ ký số hàng đầu Việt Nam, hỗ trợ kê khai Thuế, BHXH, Hải quan.',
     icon: 'PenTool',
     path: '/digital-signature',
+    accent: 'blue-500',
   },
   {
     id: 'e-invoice',
-    title: 'Hóa đơn điện tử',
-    description: 'Giải pháp hóa đơn điện tử S-Invoice an toàn, bảo mật.',
+    title: 'Hóa Đơn Điện Tử',
+    description: 'Hệ thống S-Invoice thông minh, khởi tạo hóa đơn nhanh chóng, an toàn và đúng quy định pháp luật.',
     icon: 'FileText',
     path: '/e-invoice',
+    accent: 'emerald-500',
   },
   {
     id: 'e-contract',
-    title: 'Hợp đồng điện tử',
-    description: 'Ký kết hợp đồng mọi lúc, mọi nơi, pháp lý đảm bảo.',
+    title: 'Hợp Đồng Điện Tử',
+    description: 'Ký kết không chạm vContract, tiết kiệm 90% thời gian và chi phí in ấn, chuyển phát.',
     icon: 'FileCheck',
     path: '/e-contract',
+    accent: 'amber-500',
   },
   {
     id: 'pos',
-    title: 'Phần mềm bán hàng',
-    description: 'Quản lý bán hàng, kho, khách hàng hiệu quả với Tendoo.',
+    title: 'Phần Mềm Bán Hàng',
+    description: 'Quản lý kho, doanh thu, khách hàng tập trung. Tích hợp hóa đơn điện tử máy tính tiền.',
     icon: 'LayoutDashboard',
     path: '/pos-software',
+    accent: 'indigo-500',
   },
   {
     id: 'business-reg',
-    title: 'Thành lập doanh nghiệp',
-    description: 'Tư vấn và hỗ trợ thủ tục pháp lý trọn gói cho startup.',
+    title: 'Thành Lập Doanh Nghiệp',
+    description: 'Dịch vụ tư vấn pháp lý trọn gói, hỗ trợ startup từ ý tưởng đến khi đi vào hoạt động ổn định.',
     icon: 'Briefcase',
     path: '/business-registration',
+    accent: 'rose-500',
   },
 ];
 
 export const PRICING_INTERNET = [
-  { name: 'NETVT01_T', speed: '300 Mbps', price: '195.000đ', features: ['Thiết bị: ONT Dualband (chuẩn wifi 6)', 'Phù hợp cá nhân, hộ gia đình', 'Tốc độ ổn định'] },
-  { name: 'NETVT2_T', speed: '500 Mbps - 1 Gbps', price: '240.000đ', features: ['Thiết bị: ONT Dualband (chuẩn wifi 6)', 'Phù hợp hộ gia đình nhiều thiết bị', 'Băng thông lớn'] },
-  { name: 'MESHVT1_T', speed: '300 Mbps', price: '210.000đ', features: ['Thiết bị: ONT Dualband + 1 Mesh wifi', 'Phủ sóng rộng, xuyên tường', 'Công nghệ Mesh wifi 6'] },
-  { name: 'MESHVT2_T', speed: '500 Mbps - 1 Gbps', price: '245.000đ', features: ['Thiết bị: ONT Dualband + 2 Mesh wifi', 'Phủ sóng toàn bộ căn nhà', 'Roaming mượt mà'] },
-  { name: 'MESHVT3_T', speed: '500 Mbps - 1 Gbps', price: '299.000đ', features: ['Thiết bị: ONT Dualband + 3 Mesh wifi', 'Giải pháp cho nhà tầng, biệt thự', 'Tốc độ không giới hạn'] },
+  { 
+    name: 'NETVT01_T', 
+    speed: '300 Mbps', 
+    price: '195.000đ', 
+    features: ['Trang bị Modem Wifi 6 (ONT Dualband)', 'Phù hợp cá nhân, sinh viên', 'Tốc độ ổn định, giá rẻ'] 
+  },
+  { 
+    name: 'NETVT2_T', 
+    speed: '500Mbps - 1Gbps', 
+    price: '240.000đ', 
+    features: ['Trang bị Modem Wifi 6 (ONT Dualband)', 'Phù hợp hộ gia đình 4-6 thiết bị', 'Băng thông lớn, mượt mà'] 
+  },
+  { 
+    name: 'MESHVT1_T', 
+    speed: '300 Mbps', 
+    price: '210.000đ', 
+    features: ['Trang bị Modem Wifi 6 + 01 Mesh Wifi', 'Phủ sóng căn hộ 1-2 phòng ngủ', 'Công nghệ Mesh hiện đại'] 
+  },
+  { 
+    name: 'MESHVT2_T', 
+    speed: '500Mbps - 1Gbps', 
+    price: '245.000đ', 
+    features: ['Trang bị Modem Wifi 6 + 02 Mesh Wifi', 'Phủ sóng nhà tầng, căn hộ rộng', 'Roaming mượt mà toàn bộ nhà'] 
+  },
+  { 
+    name: 'MESHVT3_T', 
+    speed: '500Mbps - 1Gbps', 
+    price: '299.000đ', 
+    features: ['Trang bị Modem Wifi 6 + 03 Mesh Wifi', 'Tốc độ tối đa lên đến 1Gbps', 'Giải pháp cho biệt thự, nhà vườn'] 
+  },
 ];
 
 export const PRICING_CA = [
-  { duration: '1 Năm', price: '1.792.000đ', renewalPrice: '1.252.000đ', promo: 'Đã bao gồm VAT & USB Token' },
-  { duration: '2 Năm', price: '2.691.000đ', renewalPrice: '2.151.000đ', promo: 'Đã bao gồm VAT & USB Token' },
+  { duration: '1 Năm', price: '1.792.000đ', renewalPrice: '1.252.000đ', promo: 'Giá đã bao gồm USB Token (540.000đ)' },
+  { duration: '2 Năm', price: '2.691.000đ', renewalPrice: '2.151.000đ', promo: 'Giá đã bao gồm USB Token (540.000đ)' },
   { duration: '3 Năm', price: '3.052.000đ', renewalPrice: '2.856.000đ', promo: 'Miễn phí USB Token' },
 ];
 
