@@ -1,5 +1,5 @@
-import React, { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { Suspense, lazy, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import { Phone } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -20,9 +20,25 @@ const PostArticle = lazy(() => import('./pages/PostArticle'));
 const Contact = lazy(() => import('./pages/Contact'));
 const LocationArticle = lazy(() => import('./pages/LocationArticle'));
 
+function RouteHandler() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const p = params.get('p');
+    if (p) {
+      navigate(p, { replace: true });
+    }
+  }, [location, navigate]);
+
+  return null;
+}
+
 export default function App() {
   return (
     <Router>
+      <RouteHandler />
       <SmoothScroll>
         <div className="min-h-screen flex flex-col font-sans">
           <Navbar />

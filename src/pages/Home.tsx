@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -68,39 +69,44 @@ export default function Home() {
     return () => ctx.revert();
   }, []);
 
-  if (state.succeeded) {
-    return (
-      <div className="pt-32 min-h-screen flex items-center justify-center bg-slate-50 text-slate-900">
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          className="text-center p-12 glass-card max-w-lg mx-auto"
-        >
-          <h2 className="text-4xl font-black text-slate-900 mb-6 uppercase tracking-tighter">Cảm ơn bạn!</h2>
-          <p className="text-slate-600 text-lg font-medium leading-relaxed">
-            Yêu cầu của bạn đã được gửi thành công. Đội ngũ chuyên viên Viettel Đắk Lắk sẽ liên hệ lại với bạn trong thời gian sớm nhất.
-          </p>
-          <button 
-            onClick={() => window.location.href = '/'}
-            className="mt-10 btn-primary px-8 py-4"
-          >
-            Quay lại trang chủ
-          </button>
-        </motion.div>
-      </div>
-    );
-  }
-
   return (
-    <div className="flex flex-col w-full bg-slate-50 text-slate-900">
-      {/* Hero Section */}
-      <section ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden">
+    <>
+      <Helmet>
+        <title>Viettel Đắk Lắk - Internet, Truyền hình, Chữ ký số, Hóa đơn điện tử</title>
+        <meta name="description" content="Nhà cung cấp dịch vụ Internet, Truyền hình, Chữ ký số, Hóa đơn điện tử hàng đầu tại Đắk Lắk. Kết nối nhanh chóng, ổn định, hỗ trợ 24/7." />
+        <meta property="og:title" content="Viettel Đắk Lắk - Kết nối tương lai" />
+        <meta property="og:description" content="Nhà cung cấp dịch vụ Internet, Truyền hình, Chữ ký số, Hóa đơn điện tử hàng đầu tại Đắk Lắk. Kết nối nhanh chóng, ổn định, hỗ trợ 24/7." />
+        <meta property="og:type" content="website" />
+      </Helmet>
+      {state.succeeded ? (
+        <div className="pt-32 min-h-screen flex items-center justify-center bg-slate-50 text-slate-900">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="text-center p-12 glass-card max-w-lg mx-auto"
+          >
+            <h2 className="text-4xl font-black text-slate-900 mb-6 uppercase tracking-tighter">Cảm ơn bạn!</h2>
+            <p className="text-slate-600 text-lg font-medium leading-relaxed">
+              Yêu cầu của bạn đã được gửi thành công. Đội ngũ chuyên viên Viettel Đắk Lắk sẽ liên hệ lại với bạn trong thời gian sớm nhất.
+            </p>
+            <button 
+              onClick={() => window.location.href = '/'}
+              className="mt-10 btn-primary px-8 py-4"
+            >
+              Quay lại trang chủ
+            </button>
+          </motion.div>
+        </div>
+      ) : (
+        <div className="flex flex-col w-full bg-slate-50 text-slate-900 overflow-hidden">
+        <section className="relative min-h-screen flex items-center">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2072" 
             alt="Technology Background" 
             className="hero-bg w-full h-full object-cover opacity-20 grayscale"
             referrerPolicy="no-referrer"
+            loading="eager"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-50/60 via-slate-50/90 to-slate-50" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(238,0,0,0.15)_0%,transparent_70%)]" />
@@ -128,7 +134,7 @@ export default function Home() {
               ))}
             </div>
             <div className="flex flex-col sm:flex-row gap-6">
-              <a href="#register" className="btn-primary px-12 py-5 text-lg shadow-2xl shadow-viettel-red/20 group">
+              <a href="#register" className="btn-primary px-12 py-5 text-lg shadow-2xl shadow-viettel-red/20 group animate-pulse">
                 Đăng ký ngay <ArrowRight className="ml-3 group-hover:translate-x-1 transition-transform" />
               </a>
               <a 
@@ -432,6 +438,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+        </div>
+      )}
+    </>
   );
 }
+
