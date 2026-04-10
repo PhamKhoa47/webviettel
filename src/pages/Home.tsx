@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet-async';
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -7,13 +6,10 @@ import { Link } from 'react-router-dom';
 import { SERVICES, BRAND, PRICING_INTERNET, DAK_LAK_DISTRICTS } from '../constants';
 import * as Icons from 'lucide-react';
 import { cn } from '../lib/utils';
-import { useForm, ValidationError } from '@formspree/react';
-import { motion } from 'motion/react';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-  const [state, handleSubmit] = useForm("mvzwqwnv");
   const heroRef = useRef<HTMLDivElement>(null);
   const servicesRef = useRef<HTMLDivElement>(null);
   const benefitsRef = useRef<HTMLDivElement>(null);
@@ -70,43 +66,15 @@ export default function Home() {
   }, []);
 
   return (
-    <>
-      <Helmet>
-        <title>Viettel Đắk Lắk - Internet, Truyền hình, Chữ ký số, Hóa đơn điện tử</title>
-        <meta name="description" content="Nhà cung cấp dịch vụ Internet, Truyền hình, Chữ ký số, Hóa đơn điện tử hàng đầu tại Đắk Lắk. Kết nối nhanh chóng, ổn định, hỗ trợ 24/7." />
-        <meta property="og:title" content="Viettel Đắk Lắk - Kết nối tương lai" />
-        <meta property="og:description" content="Nhà cung cấp dịch vụ Internet, Truyền hình, Chữ ký số, Hóa đơn điện tử hàng đầu tại Đắk Lắk. Kết nối nhanh chóng, ổn định, hỗ trợ 24/7." />
-        <meta property="og:type" content="website" />
-      </Helmet>
-      {state.succeeded ? (
-        <div className="pt-32 min-h-screen flex items-center justify-center bg-slate-50 text-slate-900">
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="text-center p-12 glass-card max-w-lg mx-auto"
-          >
-            <h2 className="text-4xl font-black text-slate-900 mb-6 uppercase tracking-tighter">Cảm ơn bạn!</h2>
-            <p className="text-slate-600 text-lg font-medium leading-relaxed">
-              Yêu cầu của bạn đã được gửi thành công. Đội ngũ chuyên viên Viettel Đắk Lắk sẽ liên hệ lại với bạn trong thời gian sớm nhất.
-            </p>
-            <button 
-              onClick={() => window.location.href = '/'}
-              className="mt-10 btn-primary px-8 py-4"
-            >
-              Quay lại trang chủ
-            </button>
-          </motion.div>
-        </div>
-      ) : (
-        <div className="flex flex-col w-full bg-slate-50 text-slate-900 overflow-hidden">
-        <section className="relative min-h-screen flex items-center">
+    <div className="flex flex-col w-full bg-slate-50 text-slate-900">
+      {/* Hero Section */}
+      <section ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2072" 
             alt="Technology Background" 
             className="hero-bg w-full h-full object-cover opacity-20 grayscale"
             referrerPolicy="no-referrer"
-            loading="eager"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-50/60 via-slate-50/90 to-slate-50" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(238,0,0,0.15)_0%,transparent_70%)]" />
@@ -134,7 +102,7 @@ export default function Home() {
               ))}
             </div>
             <div className="flex flex-col sm:flex-row gap-6">
-              <a href="#register" className="btn-primary px-12 py-5 text-lg shadow-2xl shadow-viettel-red/20 group animate-pulse">
+              <a href="#register" className="btn-primary px-12 py-5 text-lg shadow-2xl shadow-viettel-red/20 group">
                 Đăng ký ngay <ArrowRight className="ml-3 group-hover:translate-x-1 transition-transform" />
               </a>
               <a 
@@ -373,29 +341,29 @@ export default function Home() {
 
               <form 
                 className="animate-on-scroll space-y-8"
-                onSubmit={handleSubmit}
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  alert('Cảm ơn bạn đã gửi yêu cầu. Chúng tôi sẽ liên hệ lại sớm nhất!');
+                }}
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-3">
-                    <label htmlFor="name" className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Họ và tên</label>
-                    <input id="name" name="name" type="text" placeholder="Nhập họ tên" className="w-full px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:border-viettel-red focus:bg-slate-100 outline-none transition-all text-slate-900 font-medium" required />
-                    <ValidationError prefix="Name" field="name" errors={state.errors} />
+                    <label className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Họ và tên</label>
+                    <input type="text" placeholder="Nhập họ tên" className="w-full px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:border-viettel-red focus:bg-slate-100 outline-none transition-all text-slate-900 font-medium" />
                   </div>
                   <div className="space-y-3">
-                    <label htmlFor="phone" className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Số điện thoại</label>
-                    <input id="phone" name="phone" type="tel" placeholder="Nhập số điện thoại" className="w-full px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:border-viettel-red focus:bg-slate-100 outline-none transition-all text-slate-900 font-medium" required />
-                    <ValidationError prefix="Phone" field="phone" errors={state.errors} />
+                    <label className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Số điện thoại</label>
+                    <input type="tel" placeholder="Nhập số điện thoại" className="w-full px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:border-viettel-red focus:bg-slate-100 outline-none transition-all text-slate-900 font-medium" />
                   </div>
                 </div>
                 <div className="space-y-3">
-                  <label htmlFor="address" className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Địa chỉ lắp đặt</label>
-                  <input id="address" name="address" type="text" placeholder="Nhập địa chỉ (Huyện, Xã, Thôn...)" className="w-full px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:border-viettel-red focus:bg-slate-100 outline-none transition-all text-slate-900 font-medium" required />
-                  <ValidationError prefix="Address" field="address" errors={state.errors} />
+                  <label className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Địa chỉ lắp đặt</label>
+                  <input type="text" placeholder="Nhập địa chỉ (Huyện, Xã, Thôn...)" className="w-full px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:border-viettel-red focus:bg-slate-100 outline-none transition-all text-slate-900 font-medium" />
                 </div>
                 <div className="space-y-3">
-                  <label htmlFor="service" className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Dịch vụ quan tâm</label>
+                  <label className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Dịch vụ quan tâm</label>
                   <div className="relative">
-                    <select id="service" name="service" className="w-full px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:border-viettel-red focus:bg-slate-100 outline-none transition-all text-slate-900 font-medium appearance-none">
+                    <select className="w-full px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:border-viettel-red focus:bg-slate-100 outline-none transition-all text-slate-900 font-medium appearance-none">
                       <option className="bg-slate-50">Internet Cáp Quang</option>
                       <option className="bg-slate-50">Combo Internet + Truyền Hình</option>
                       <option className="bg-slate-50">Chữ Ký Số Viettel-CA</option>
@@ -407,8 +375,8 @@ export default function Home() {
                     <MousePointer2 className="absolute right-6 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none" size={16} />
                   </div>
                 </div>
-                <button type="submit" disabled={state.submitting} className="btn-primary w-full py-6 text-xl mt-6 shadow-2xl shadow-viettel-red/20 uppercase tracking-widest font-black">
-                  {state.submitting ? 'Đang gửi...' : 'Gửi yêu cầu đăng ký'}
+                <button type="submit" className="btn-primary w-full py-6 text-xl mt-6 shadow-2xl shadow-viettel-red/20 uppercase tracking-widest font-black">
+                  Gửi yêu cầu đăng ký
                 </button>
               </form>
             </div>
@@ -438,9 +406,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-        </div>
-      )}
-    </>
+    </div>
   );
 }
-
