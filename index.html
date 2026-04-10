@@ -32,6 +32,21 @@
           history.replaceState(null, null, redirect);
         }
       })();
+
+      // Bắt lỗi runtime để debug trang trắng
+      window.onerror = function(message, source, lineno, colno, error) {
+        var div = document.createElement('div');
+        div.style.position = 'fixed';
+        div.style.top = '0';
+        div.style.left = '0';
+        div.style.width = '100%';
+        div.style.background = 'red';
+        div.style.color = 'white';
+        div.style.padding = '10px';
+        div.style.zIndex = '9999';
+        div.innerHTML = 'Error: ' + message + ' at ' + source + ':' + lineno;
+        document.body.appendChild(div);
+      };
     </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
