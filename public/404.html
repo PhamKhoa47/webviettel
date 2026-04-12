@@ -6,8 +6,10 @@
     <script>
       // Lấy đường dẫn hiện tại mà người dùng truy cập
       var path = window.location.pathname;
-      // Chuyển hướng về trang chủ và lưu đường dẫn vào query parameter
-      window.location.replace('/?redirect=' + encodeURIComponent(path));
+      var search = window.location.search;
+      var hash = window.location.hash;
+      // Chuyển hướng về trang chủ và giữ nguyên các tham số
+      window.location.replace('/' + (path === '/' ? '' : '?redirect=' + encodeURIComponent(path + search + hash)));
     </script>
   </head>
   <body></body>
