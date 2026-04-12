@@ -1,20 +1,51 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Web Viettel
 
-# Run and deploy your AI Studio app
+Trang web giới thiệu giải pháp số và dịch vụ Viettel tại Đắk Lắk.
 
-This contains everything you need to run your app locally.
+## Running locally
 
-View your app in AI Studio: https://ai.studio/apps/1cb63e06-6483-4d5a-9f6a-e28402ae730f
+### Prerequisites
+- Node.js 20+ recommended
+- npm 10+ recommended
 
-## Run Locally
+### Install
+```bash
+npm install
+```
 
-**Prerequisites:**  Node.js
+### Start development server
+```bash
+npm run dev
+```
 
+### Build production bundle
+```bash
+npm run build
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Preview production build
+```bash
+npm run preview
+```
+
+## Deployment
+
+Ứng dụng được cấu hình để deploy lên GitHub Pages. Với domain custom `viettel.daklak.vn`, giữ cấu hình `base: '/'` trong `vite.config.ts` và `public/CNAME` chứa domain.
+
+```bash
+npm run deploy
+```
+
+## Quality checks
+
+```bash
+npm run lint
+npm run typecheck
+npm run format
+```
+
+## Notes
+
+- `public/CNAME` đang dùng `viettel.daklak.vn`
+- `vite.config.ts` đã được tối ưu cho deploy trên GitHub Pages
+- `tsconfig.json` bật chế độ `strict` để tăng an toàn kiểu dữ liệu

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Phone, CheckCircle2, ArrowRight, MapPin, Activity, ShieldCheck, Zap, Clock } from 'lucide-react';
+import { Phone, CheckCircle2, MapPin } from 'lucide-react';
 import { BRAND } from '../constants';
 import { LOCATIONS, slugify } from '../data/locations';
 import { generateArticleContent } from '../data/articleGenerator';

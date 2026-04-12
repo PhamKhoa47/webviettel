@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
-import { Wifi, Zap, Shield, Headphones, ArrowRight, CheckCircle2, MapPin, Clock, HelpCircle, Globe, Cpu, Activity, Phone } from 'lucide-react';
+import { Zap, Shield, ArrowRight, CheckCircle2, HelpCircle, Globe, Cpu, Activity, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { PRICING_INTERNET, BRAND, DAK_LAK_DISTRICTS } from '../constants';
 import gsap from 'gsap';

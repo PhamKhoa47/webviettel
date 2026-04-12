@@ -1,12 +1,20 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowRight, CheckCircle2, Phone, Wifi, MapPin, Zap, MessageSquare, Shield, Globe, Users, Activity, Cpu, MousePointer2 } from 'lucide-react';
+import { ArrowRight, Briefcase, CheckCircle2, FileCheck, FileText, LayoutDashboard, MousePointer2, PenTool, Phone, Wifi, MapPin, Zap, MessageSquare, Shield, Globe, Users, Activity } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { SERVICES, BRAND, PRICING_INTERNET, DAK_LAK_DISTRICTS } from '../constants';
-import * as Icons from 'lucide-react';
+import { SERVICES, BRAND, PRICING_INTERNET } from '../constants';
 import { cn } from '../lib/utils';
 import SEO from '../components/SEO';
+
+const serviceIcons: Record<string, React.ComponentType<{ size?: number }>> = {
+  Wifi,
+  PenTool,
+  FileText,
+  FileCheck,
+  LayoutDashboard,
+  Briefcase,
+};
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -253,8 +261,8 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {SERVICES.map((service, index) => {
-              const IconComponent = (Icons as any)[service.icon] || Globe;
+            {SERVICES.map((service) => {
+              const IconComponent = serviceIcons[service.icon] || Globe;
               return (
                 <div
                   key={service.id}
@@ -337,7 +345,7 @@ export default function Home() {
                 <div className="absolute top-8 right-8 text-viettel-red/10 group-hover:text-viettel-red/20 transition-colors">
                   <MessageSquare size={48} />
                 </div>
-                <p className="text-slate-700 text-lg italic mb-10 relative z-10 font-medium leading-relaxed">"{t.content}"</p>
+                <p className="text-slate-700 text-lg italic mb-10 relative z-10 font-medium leading-relaxed">&ldquo;{t.content}&rdquo;</p>
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center font-black text-lg">
                     {t.name[0]}

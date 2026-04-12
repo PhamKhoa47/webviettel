@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { BRAND } from '../constants';
-import { ArrowRight, Calendar, User, Tag, Activity, Cpu, Phone, ShieldCheck, Smartphone, MapPin } from 'lucide-react';
+import { ArrowRight, Calendar, User, Activity, Phone, MapPin } from 'lucide-react';
 import { LOCATIONS, slugify } from '../data/locations';
 import { BLOG_POSTS } from '../data/posts';
 import SEO from '../components/SEO';

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageCircle, Phone, X, Facebook, MessageSquare } from 'lucide-react';
+import { MessageCircle, Phone, X, MessageSquare, Share2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { BRAND } from '../constants';
 
@@ -56,7 +56,7 @@ export default function ChatMenu() {
               className="flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-100 text-slate-900 transition-all duration-300 group border border-transparent hover:border-slate-200"
             >
               <div className="w-10 h-10 bg-sky-500/20 rounded-xl flex items-center justify-center text-sky-400 group-hover:bg-sky-500 group-hover:text-slate-900 transition-all duration-500">
-                <Facebook size={20} />
+                <Share2 size={20} />
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-sm">Messenger</span>

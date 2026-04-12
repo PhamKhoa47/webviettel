@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { BRAND } from '../constants';
-import { LayoutDashboard, Database, Users, BarChart3, CheckCircle2, Smartphone, ShieldCheck, ShoppingCart, Bot, CreditCard, Globe, ArrowRight, Zap, Activity, Cpu, Phone } from 'lucide-react';
+import { Database, CheckCircle2, ShieldCheck, ShoppingCart, Bot, CreditCard, Globe, ArrowRight, Activity, Cpu, Phone } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SEO from '../components/SEO';
@@ -230,16 +230,16 @@ export default function POSSoftware() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: 'Bán hàng đa kênh', icon: <ShoppingCart />, desc: 'Đồng bộ đơn hàng, kho bãi và liên kết vận chuyển thông minh trên một nền tảng duy nhất.' },
-              { title: 'Trợ lý ảo AI', icon: <Bot />, desc: 'AI phân tích dữ liệu kinh doanh, dự báo xu hướng và đưa ra gợi ý tối ưu doanh thu tự động.' },
-              { title: 'Hóa đơn điện tử', icon: <ShieldCheck />, desc: 'Tích hợp sẵn S-Invoice, xuất hóa đơn ngay khi bán hàng, tuân thủ 100% quy định thuế.' },
-              { title: 'Thanh toán QR động', icon: <CreditCard />, desc: 'Tạo mã QR thanh toán theo từng đơn hàng, thông báo tiền về tức thì, tránh thất thoát.' },
-              { title: 'Đồng bộ Sàn TMĐT', icon: <Globe />, desc: 'Kết nối trực tiếp với Shopee, Lazada, TikTok Shop để quản lý tồn kho tập trung.' },
-              { title: 'Cloud Security', icon: <Database />, desc: 'Dữ liệu được bảo mật tuyệt đối trên hạ tầng Cloud của Viettel, truy cập mọi lúc mọi nơi.' }
+              { title: 'Bán hàng đa kênh', icon: ShoppingCart, desc: 'Đồng bộ đơn hàng, kho bãi và liên kết vận chuyển thông minh trên một nền tảng duy nhất.' },
+              { title: 'Trợ lý ảo AI', icon: Bot, desc: 'AI phân tích dữ liệu kinh doanh, dự báo xu hướng và đưa ra gợi ý tối ưu doanh thu tự động.' },
+              { title: 'Hóa đơn điện tử', icon: ShieldCheck, desc: 'Tích hợp sẵn S-Invoice, xuất hóa đơn ngay khi bán hàng, tuân thủ 100% quy định thuế.' },
+              { title: 'Thanh toán QR động', icon: CreditCard, desc: 'Tạo mã QR thanh toán theo từng đơn hàng, thông báo tiền về tức thì, tránh thất thoát.' },
+              { title: 'Đồng bộ Sàn TMĐT', icon: Globe, desc: 'Kết nối trực tiếp với Shopee, Lazada, TikTok Shop để quản lý tồn kho tập trung.' },
+              { title: 'Cloud Security', icon: Database, desc: 'Dữ liệu được bảo mật tuyệt đối trên hạ tầng Cloud của Viettel, truy cập mọi lúc mọi nơi.' }
             ].map((item, i) => (
               <div key={i} className="feature-card glass-card p-10 border-slate-100 hover:border-emerald-500/50 transition-all group">
                 <div className="w-16 h-16 bg-white text-emerald-500 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-emerald-500 group-hover:text-slate-900 transition-all duration-500">
-                  {React.cloneElement(item.icon as React.ReactElement, { size: 32 })}
+                  <item.icon size={32} />
                 </div>
                 <h4 className="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight group-hover:text-emerald-400 transition-colors">{item.title}</h4>
                 <p className="text-slate-600 leading-relaxed font-medium">{item.desc}</p>

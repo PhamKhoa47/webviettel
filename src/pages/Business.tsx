@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { BRAND } from '../constants';
-import { Rocket, Briefcase, Store, CheckCircle2, Shield, Zap, Users, Headphones, Globe, TrendingUp, Activity, ArrowRight, Cpu, Phone } from 'lucide-react';
+import { Rocket, Briefcase, Store, CheckCircle2, Shield, Headphones, Globe, TrendingUp, Cpu, Phone } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SEO from '../components/SEO';
@@ -210,7 +210,7 @@ export default function Business() {
               </h2>
               <div className="bg-slate-50 p-6 rounded-2xl border-l-4 border-viettel-red mb-4">
                 <p className="text-slate-900 font-black text-lg leading-relaxed">
-                  Viettel Đắk Lắk cung cấp gói <span className="text-viettel-red">'Khởi nghiệp'</span> trọn gói bao gồm: Thành lập doanh nghiệp, Chữ ký số Viettel-CA, Hóa đơn điện tử S-Invoice và tư vấn pháp lý ban đầu with chi phí tối ưu nhất.
+                  Viettel Đắk Lắk cung cấp gói <span className="text-viettel-red">&apos;Khởi nghiệp&apos;</span> trọn gói bao gồm: Thành lập doanh nghiệp, Chữ ký số Viettel-CA, Hóa đơn điện tử S-Invoice và tư vấn pháp lý ban đầu with chi phí tối ưu nhất.
                 </p>
               </div>
               <p className="text-slate-600 leading-relaxed font-medium">

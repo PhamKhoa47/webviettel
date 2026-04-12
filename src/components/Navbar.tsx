@@ -47,8 +47,6 @@ export default function Navbar() {
 
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-  const isHomePage = location.pathname === '/';
-
   return (
     <nav className={cn(
       "fixed top-0 w-full z-50 transition-all duration-500 ease-in-out",

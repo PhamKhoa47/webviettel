@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { Briefcase, FileText, Scale, Clock, CheckCircle2, Zap, Activity, ArrowRight, ShieldCheck, Gavel, Phone } from 'lucide-react';
+import { Briefcase, CheckCircle2, Gavel, Phone } from 'lucide-react';
 import { BRAND } from '../constants';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';

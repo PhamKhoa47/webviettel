@@ -20,6 +20,7 @@ const PostArticle = lazy(() => import('./pages/PostArticle'));
 const Contact = lazy(() => import('./pages/Contact'));
 const LocationArticle = lazy(() => import('./pages/LocationArticle'));
 const Resources = lazy(() => import('./pages/Resources'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 export default function App() {
   // Xử lý redirect từ 404.html
@@ -53,7 +54,7 @@ export default function App() {
                 <Route path="/blog/:slug" element={<LocationArticle />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/resources" element={<Resources />} />
-                <Route path="*" element={<Home />} />
+                <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>
           </main>

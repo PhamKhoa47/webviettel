@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Phone, Mail, MapPin, Clock, Send, MessageSquare, Globe, Activity, ShieldCheck, ArrowRight, Cpu, Smartphone } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, Activity } from 'lucide-react';
 import { BRAND } from '../constants';
 import { useForm, ValidationError } from '@formspree/react';
 import SEO from '../components/SEO';

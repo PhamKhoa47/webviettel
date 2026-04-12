@@ -1,42 +1,49 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import {defineConfig, loadEnv} from 'vite';
+import {defineConfig} from 'vite';
 
-export default defineConfig(({mode}) => {
-  const env = loadEnv(mode, '.', '');
-  const version = Date.now(); // Tạo version dựa trên thời gian build
-
+export default defineConfig(() => {
   return {
     base: '/',
     plugins: [
-      react(), 
-      tailwindcss(),
+      react(),
+      ...tailwindcss(),
     ],
-    define: {
-      'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-    },
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve(__dirname, 'src'),
       },
     },
     build: {
       rollupOptions: {
         output: {
-          manualChunks: {
-            'vendor': ['react', 'react-dom', 'react-router-dom', 'lucide-react', 'motion/react'],
-            'gsap': ['gsap'],
-          }
-        }
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              if (id.includes('lucide-react')) {
+                return 'icons';
+              }
+              if (id.includes('motion')) {
+                return 'motion';
+              }
+              if (id.includes('gsap')) {
+                return 'gsap';
+              }
+              if (id.includes('react') || id.includes('react-dom') || id.includes('react-router-dom')) {
+                return 'vendor';
+              }
+            }
+            return undefined;
+          },
+        },
       },
       chunkSizeWarningLimit: 1000,
-      minify: 'esbuild',
+      minify: 'esbuild' as const,
       sourcemap: false,
     },
     server: {
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
-      // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
+      // Do not modify—file watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',
     },
   };
