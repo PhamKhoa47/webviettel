@@ -1,0 +1,153 @@
+import React from 'react';
+import { motion } from 'motion/react';
+import { Download, FileText, ExternalLink, BookOpen, Settings, ShieldCheck, HelpCircle, Zap, Headphones, ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
+
+const resources = [
+  {
+    category: 'Tài liệu hướng dẫn S-Invoice',
+    items: [
+      {
+        title: 'Hướng dẫn sử dụng S-Invoice (Nghị định 123)',
+        description: 'Tài liệu chi tiết hướng dẫn các bước từ khởi tạo, phát hành đến quản lý hóa đơn theo quy định mới nhất.',
+        link: 'https://sinvoice.viettel.vn/ho-tro/huong-dan-su-dung',
+        type: 'Web',
+        icon: BookOpen
+      },
+      {
+        title: 'Hướng dẫn thông báo phát hành hóa đơn',
+        description: 'Các bước nộp hồ sơ đăng ký sử dụng hóa đơn điện tử với cơ quan thuế qua hệ thống S-Invoice.',
+        link: 'https://sme.viettel.vn/content_v2/guideline_v2/service/37/SINVOICE',
+        type: 'Web',
+        icon: FileText
+      },
+      {
+        title: 'Hướng dẫn xử lý hóa đơn sai sót',
+        description: 'Quy trình lập hóa đơn thay thế, điều chỉnh hoặc hủy hóa đơn theo Nghị định 123/2020/NĐ-CP.',
+        link: 'https://sinvoice.viettel.vn/ho-tro/huong-dan-su-dung',
+        type: 'Web',
+        icon: ShieldCheck
+      },
+      {
+        title: 'Hướng dẫn tra cứu hóa đơn cho khách hàng',
+        description: 'Tài liệu hướng dẫn khách hàng lẻ tra cứu và tải hóa đơn điện tử từ portal Viettel.',
+        link: 'https://sinvoice.viettel.vn/tra-cuu-hoa-don',
+        type: 'Web',
+        icon: HelpCircle
+      }
+    ]
+  },
+  {
+    category: 'Công cụ & Phần mềm tải về',
+    items: [
+      {
+        title: 'Viettel-CA Token Manager (Windows)',
+        description: 'Phần mềm quản lý USB Token và hỗ trợ ký số trên các hệ thống của Viettel.',
+        link: 'https://viettel-ca.vn/download',
+        type: 'Download',
+        icon: Settings
+      },
+      {
+        title: 'Tool ký số S-Invoice (Chrome/Edge Extension)',
+        description: 'Công cụ hỗ trợ ký số trực tiếp trên trình duyệt web cho hệ thống S-Invoice.',
+        link: 'https://viettel-ca.vn/download',
+        type: 'Download',
+        icon: Zap
+      },
+      {
+        title: 'Phần mềm hỗ trợ từ xa UltraView',
+        description: 'Công cụ cho phép kỹ thuật viên Viettel hỗ trợ xử lý sự cố trực tiếp trên máy tính của bạn.',
+        link: 'https://ultraview.net/vi/download.html',
+        type: 'Download',
+        icon: Headphones
+      }
+    ]
+  },
+  {
+    category: 'Video hướng dẫn trực quan',
+    items: [
+      {
+        title: 'Video: Hướng dẫn lập và phát hành hóa đơn',
+        description: 'Thao tác trực tiếp trên giao diện S-Invoice để xuất hóa đơn cho khách hàng.',
+        link: 'https://www.youtube.com/results?search_query=h%C6%B0%E1%BB%9Bng+d%E1%BA%ABn+s+invoice+viettel',
+        type: 'Video',
+        icon: FileText
+      },
+      {
+        title: 'Video: Hướng dẫn ký số bằng USB Token',
+        description: 'Cách kết nối thiết bị và thực hiện ký số an toàn trên hệ thống.',
+        link: 'https://www.youtube.com/results?search_query=h%C6%B0%E1%BB%9Bng+d%E1%BA%ABn+ky+so+viettel+ca',
+        type: 'Video',
+        icon: ShieldCheck
+      }
+    ]
+  }
+];
+
+export default function Resources() {
+  return (
+    <div className="bg-slate-50 min-h-screen pt-32 pb-20">
+      <SEO 
+        title="Tài nguyên & Hướng dẫn sử dụng S-Invoice Viettel"
+        description="Tổng hợp tài liệu hướng dẫn sử dụng, video và công cụ hỗ trợ cho dịch vụ Hóa đơn điện tử S-Invoice Viettel."
+        keywords="hướng dẫn s-invoice, tài liệu hóa đơn điện tử viettel, download viettel-ca, hướng dẫn sử dụng s-invoice"
+      />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-4xl md:text-6xl font-black text-slate-900 mb-6 uppercase tracking-tighter"
+          >
+            TÀI NGUYÊN <span className="text-viettel-red">& HƯỚNG DẪN</span>
+          </motion.h1>
+          <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium">
+            Mọi tài liệu bạn cần để làm chủ hệ thống Hóa đơn điện tử S-Invoice và các dịch vụ số của Viettel.
+          </p>
+        </div>
+
+        <div className="space-y-16">
+          {resources.map((group, idx) => (
+            <div key={idx}>
+              <h2 className="text-2xl font-black text-slate-900 mb-8 uppercase tracking-tight flex items-center">
+                <div className="w-8 h-1 bg-viettel-red mr-4" />
+                {group.category}
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {group.items.map((item, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    className="glass-card p-8 border-slate-200 hover:border-viettel-red/50 transition-all group"
+                  >
+                    <div className="w-14 h-14 bg-viettel-red/10 rounded-2xl flex items-center justify-center text-viettel-red mb-6 group-hover:bg-viettel-red group-hover:text-white transition-all duration-500">
+                      <item.icon size={28} />
+                    </div>
+                    <h3 className="text-xl font-black text-slate-900 mb-4 group-hover:text-viettel-red transition-colors">
+                      {item.title}
+                    </h3>
+                    <p className="text-slate-600 text-sm mb-8 font-medium leading-relaxed">
+                      {item.description}
+                    </p>
+                    <a 
+                      href={item.link}
+                      target={item.link.startsWith('http') ? "_blank" : "_self"}
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-xs font-black uppercase tracking-widest text-viettel-red hover:translate-x-2 transition-transform"
+                    >
+                      {item.type === 'Download' ? 'Tải xuống ngay' : 'Xem chi tiết'}
+                      {item.link.startsWith('http') ? <ExternalLink size={14} className="ml-2" /> : <ArrowRight size={14} className="ml-2" />}
+                    </a>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
