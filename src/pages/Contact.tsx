@@ -17,8 +17,8 @@ export default function Contact() {
         "@type": "LocalBusiness",
         "name": "Viettel Đắk Lắk - Chuyên viên Phạm Văn Khoa",
         "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200",
-        "@id": "https://vietteldaklak.vn/contact",
-        "url": "https://vietteldaklak.vn/contact",
+        "@id": "https://viettel.daklak.vn/contact",
+        "url": "https://viettel.daklak.vn/contact",
         "telephone": "0989113602",
         "email": "khoapv47@gmail.com",
         "address": {

@@ -33,8 +33,8 @@ export default function Home() {
       "@type": "LocalBusiness",
       "name": "Viettel Đắk Lắk - Chuyên viên Phạm Văn Khoa",
       "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200",
-      "@id": "https://vietteldaklak.vn",
-      "url": "https://vietteldaklak.vn",
+      "@id": "https://viettel.daklak.vn",
+      "url": "https://viettel.daklak.vn",
       "telephone": "0989113602",
       "address": {
         "@type": "PostalAddress",
