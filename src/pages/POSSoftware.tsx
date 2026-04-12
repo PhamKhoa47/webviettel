@@ -20,8 +20,8 @@ export default function POSSoftware() {
       "@type": "LocalBusiness",
       "name": "Phần mềm bán hàng Viettel Đắk Lắk - Tendoo",
       "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1200",
-      "@id": "https://vietteldaklak.vn/pos-software",
-      "url": "https://vietteldaklak.vn/pos-software",
+      "@id": "https://viettel.daklak.vn/pos-software",
+      "url": "https://viettel.daklak.vn/pos-software",
       "telephone": "0989113602",
       "address": {
         "@type": "PostalAddress",

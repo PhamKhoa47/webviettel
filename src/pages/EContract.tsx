@@ -20,8 +20,8 @@ export default function EContract() {
       "@type": "LocalBusiness",
       "name": "Hợp đồng điện tử Viettel Đắk Lắk - vContract",
       "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1200",
-      "@id": "https://vietteldaklak.vn/e-contract",
-      "url": "https://vietteldaklak.vn/e-contract",
+      "@id": "https://viettel.daklak.vn/e-contract",
+      "url": "https://viettel.daklak.vn/e-contract",
       "telephone": "0989113602",
       "address": {
         "@type": "PostalAddress",

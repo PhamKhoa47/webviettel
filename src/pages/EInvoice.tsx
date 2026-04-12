@@ -20,8 +20,8 @@ export default function EInvoice() {
       "@type": "LocalBusiness",
       "name": "Hóa đơn điện tử Viettel Đắk Lắk - S-Invoice",
       "image": "https://images.unsplash.com/photo-1586473219010-2ffc57b0d282?auto=format&fit=crop&q=80&w=1200",
-      "@id": "https://vietteldaklak.vn/e-invoice",
-      "url": "https://vietteldaklak.vn/e-invoice",
+      "@id": "https://viettel.daklak.vn/e-invoice",
+      "url": "https://viettel.daklak.vn/e-invoice",
       "telephone": "0989113602",
       "address": {
         "@type": "PostalAddress",

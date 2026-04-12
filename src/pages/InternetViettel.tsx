@@ -19,8 +19,8 @@ export default function InternetViettel() {
       "@type": "LocalBusiness",
       "name": "Viettel Đắk Lắk - Chuyên viên Phạm Văn Khoa",
       "image": "https://img-zlr3.tv360.vn/game-tet/real/im1.0/118597f64d266dc0198ad56042ee09ebd50a1513.png",
-      "@id": "https://vietteldaklak.vn/internet-viettel",
-      "url": "https://vietteldaklak.vn/internet-viettel",
+      "@id": "https://viettel.daklak.vn/internet-viettel",
+      "url": "https://viettel.daklak.vn/internet-viettel",
       "telephone": "0989113602",
       "address": {
         "@type": "PostalAddress",
