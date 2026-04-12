@@ -6,7 +6,7 @@ import { defineConfig } from 'vite';
 export default defineConfig(() => {
   return {
     // Đảm bảo dùng './' để chạy tốt trên GitHub Pages với tên miền riêng
-    base: './', 
+    base: '/', 
     plugins: [
       react(),
       ...tailwindcss(),
