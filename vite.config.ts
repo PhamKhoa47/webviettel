@@ -1,59 +1,35 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import {defineConfig, loadEnv} from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 
-export default defineConfig(({mode}) => {
+export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
-  const version = Date.now(); // Tạo version dựa trên thời gian build
 
   return {
-    base: './',
+    base: './', // QUAN TRỌNG
+
     plugins: [
-      react(), 
+      react(),
       tailwindcss(),
-      {
-        name: 'html-version-fixer',
-        transformIndexHtml(html) {
-          const version = Date.now();
-          // Tự động thêm ?v=timestamp vào các file js, css và ảnh trong index.html
-          return html.replace(
-            /(href|src)="([^"]+\.(js|css|png|jpg|jpeg|svg|webp|ico|tsx))"/g,
-            (match, p1, p2) => {
-              // Chỉ thêm nếu chưa có query và là đường dẫn nội bộ
-              if (!p2.includes('?') && !p2.startsWith('http') && !p2.startsWith('//')) {
-                return `${p1}="${p2}?v=${version}"`;
-              }
-              return match;
-            }
-          );
-        }
-      }
+      // ❌ XÓA plugin html-version-fixer
     ],
+
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
+
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve(__dirname, 'src'), // FIX alias
       },
     },
+
     build: {
-      rollupOptions: {
-        output: {
-          manualChunks: {
-            'vendor': ['react', 'react-dom', 'react-router-dom', 'lucide-react', 'motion/react'],
-            'gsap': ['gsap'],
-          }
-        }
-      },
-      chunkSizeWarningLimit: 1000,
-      minify: 'esbuild',
       sourcemap: false,
     },
+
     server: {
-      // HMR is disabled in AI Studio via DISABLE_HMR env var.
-      // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',
     },
   };
