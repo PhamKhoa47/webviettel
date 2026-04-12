@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
-import { Wifi, Router, Zap, CheckCircle2, Activity, Globe, Phone } from 'lucide-react';
+import { Wifi, Router, Zap, CheckCircle2, Shield, Activity, Cpu, Globe, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { BRAND } from '../constants';
 import gsap from 'gsap';
@@ -75,7 +75,7 @@ export default function WifiSolution() {
                 HOME WIFI <br /><span className="text-viettel-red">MESH</span>
               </h1>
               <p className="text-xl text-slate-600 mb-10 font-medium leading-relaxed max-w-xl">
-                Xóa tan &ldquo;điểm chết&rdquo; Wifi trong nhà bạn. Phủ sóng mọi ngóc ngách với công nghệ Mesh hiện đại nhất từ Viettel Đắk Lắk.
+                Xóa tan "điểm chết" Wifi trong nhà bạn. Phủ sóng mọi ngóc ngách với công nghệ Mesh hiện đại nhất từ Viettel Đắk Lắk.
               </p>
               <div className="flex flex-wrap gap-6">
                 <Link to="/contact" className="btn-primary px-10 py-5 text-sm">

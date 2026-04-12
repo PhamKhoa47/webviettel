@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { FileText, ExternalLink, BookOpen, Settings, ShieldCheck, HelpCircle, Zap, Headphones, ArrowRight } from 'lucide-react';
+import { Download, FileText, ExternalLink, BookOpen, Settings, ShieldCheck, HelpCircle, Zap, Headphones, ArrowRight } from 'lucide-react';
 import SEO from '../components/SEO';
 
 const resources = [

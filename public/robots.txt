@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://viettel.daklak.vn/sitemap.xml
+Sitemap: https://vietteldaklak.vn/sitemap.xml

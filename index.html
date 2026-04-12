@@ -9,7 +9,7 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://viettel.daklak.vn/" />
+    <meta property="og:url" content="https://vietteldaklak.vn/" />
     <meta property="og:title" content="Viettel Đắk Lắk - Giải Pháp Internet & Chuyển Đổi Số Doanh Nghiệp" />
     <meta property="og:description" content="Viettel Đắk Lắk cung cấp giải pháp viễn thông & chuyển đổi số uy tín: Internet cáp quang, Chữ ký số, Hóa đơn điện tử. Hỗ trợ 24/7." />
     <meta property="og:image" content="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=1200" />
@@ -19,40 +19,11 @@
     <meta property="twitter:title" content="Viettel Đắk Lắk - Giải Pháp Internet & Chuyển Đổi Số Doanh Nghiệp" />
     <meta property="twitter:description" content="Viettel Đắk Lắk cung cấp giải pháp viễn thông & chuyển đổi số uy tín: Internet cáp quang, Chữ ký số, Hóa đơn điện tử. Hỗ trợ 24/7." />
     
-    <link rel="canonical" href="https://viettel.daklak.vn/" />
+    <link rel="canonical" href="https://vietteldaklak.vn/" />
   </head>
   <body>
     <div id="root"></div>
-    <script>
-      // Xử lý redirect từ 404.html
-      (function() {
-        var params = new URLSearchParams(window.location.search);
-        var redirect = params.get('redirect');
-        if (redirect) {
-          history.replaceState(null, null, redirect);
-        }
-      })();
-
-      // Bắt lỗi runtime để debug trang trắng
-      window.onerror = function(message, source, lineno, colno, error) {
-        // Bỏ qua lỗi từ extension hoặc các nguồn không xác định
-        if (source && (source.indexOf('chrome-extension') !== -1 || source.indexOf('http') === -1)) {
-          return;
-        }
-        var div = document.createElement('div');
-        div.style.position = 'fixed';
-        div.style.top = '0';
-        div.style.left = '0';
-        div.style.width = '100%';
-        div.style.background = 'red';
-        div.style.color = 'white';
-        div.style.padding = '10px';
-        div.style.zIndex = '9999';
-        div.innerHTML = 'Error: ' + message + ' at ' + source + ':' + lineno;
-        document.body.appendChild(div);
-      };
-    </script>
-    <script type="module" src="src/main.tsx"></script>
+    <script type="module" src="./src/main.tsx"></script>
   </body>
 </html>
 

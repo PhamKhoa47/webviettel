@@ -1,22 +1,4 @@
-export type ArticleSection = {
-  q: string;
-  a: string;
-  detail: string;
-};
-
-export type LocationArticleContent = {
-  intro: ArticleSection;
-  packages: ArticleSection;
-  whyChoose: ArticleSection;
-  businessSupport: ArticleSection;
-  posSoftware: ArticleSection;
-  caInvoice: ArticleSection;
-  bizReg: ArticleSection;
-  eContract: ArticleSection;
-  process: ArticleSection;
-};
-
-export function generateArticleContent(locationName: string): LocationArticleContent {
+export function generateArticleContent(locationName: string) {
   // Simple seeded random function
   let seed = 0;
   for (let i = 0; i < locationName.length; i++) {
@@ -30,13 +12,7 @@ export function generateArticleContent(locationName: string): LocationArticleCon
     return ((t ^ t >>> 14) >>> 0) / 4294967296;
   }
 
-  const pick = <T,>(arr: T[]): T => {
-    if (arr.length === 0) {
-      throw new Error('Cannot pick from an empty array');
-    }
-    const index = Math.floor(random() * arr.length);
-    return arr[index]!;
-  };
+  const pick = (arr: any[]) => arr[Math.floor(random() * arr.length)];
   
   // Determine if it's a commune (xã) or town/city
   const isCommune = locationName.toLowerCase().includes('ea') || 

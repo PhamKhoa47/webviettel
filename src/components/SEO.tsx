@@ -14,8 +14,8 @@ export default function SEO({
   title, 
   description, 
   keywords, 
-  image = 'https://viettel.daklak.vn/og-image.jpg', 
-  url = 'https://viettel.daklak.vn',
+  image = 'https://vietteldaklak.vn/og-image.jpg', 
+  url = 'https://vietteldaklak.vn',
   type = 'website'
 }: SEOProps) {
   const siteTitle = `${title} | Viettel Đắk Lắk`;

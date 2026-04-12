@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
-import { Zap, Shield, ArrowRight, CheckCircle2, HelpCircle, Globe, Cpu, Activity, Phone } from 'lucide-react';
+import { Wifi, Zap, Shield, Headphones, ArrowRight, CheckCircle2, MapPin, Clock, HelpCircle, Globe, Cpu, Activity, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { PRICING_INTERNET, BRAND, DAK_LAK_DISTRICTS } from '../constants';
 import gsap from 'gsap';
@@ -19,8 +19,8 @@ export default function InternetViettel() {
       "@type": "LocalBusiness",
       "name": "Viettel Đắk Lắk - Chuyên viên Phạm Văn Khoa",
       "image": "https://img-zlr3.tv360.vn/game-tet/real/im1.0/118597f64d266dc0198ad56042ee09ebd50a1513.png",
-      "@id": "https://viettel.daklak.vn/internet-viettel",
-      "url": "https://viettel.daklak.vn/internet-viettel",
+      "@id": "https://vietteldaklak.vn/internet-viettel",
+      "url": "https://vietteldaklak.vn/internet-viettel",
       "telephone": "0989113602",
       "address": {
         "@type": "PostalAddress",

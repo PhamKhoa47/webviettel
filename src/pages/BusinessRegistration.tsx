@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { Briefcase, CheckCircle2, Gavel, Phone } from 'lucide-react';
+import { Briefcase, FileText, Scale, Clock, CheckCircle2, Zap, Activity, ArrowRight, ShieldCheck, Gavel, Phone } from 'lucide-react';
 import { BRAND } from '../constants';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -20,8 +20,8 @@ export default function BusinessRegistration() {
       "@type": "LocalBusiness",
       "name": "Dịch vụ thành lập doanh nghiệp Viettel Đắk Lắk - Phạm Văn Khoa",
       "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
-      "@id": "https://viettel.daklak.vn/business-registration",
-      "url": "https://viettel.daklak.vn/business-registration",
+      "@id": "https://vietteldaklak.vn/business-registration",
+      "url": "https://vietteldaklak.vn/business-registration",
       "telephone": "0989113602",
       "address": {
         "@type": "PostalAddress",

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
-import { Shield, Zap, LayoutDashboard, Database, Activity, Phone, HelpCircle } from 'lucide-react';
+import { FileText, CheckCircle2, Shield, Zap, LayoutDashboard, Database, Users, BarChart3, Activity, ArrowRight, Lock, Server, Phone, HelpCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { PRICING_EINVOICE, BRAND } from '../constants';
 import gsap from 'gsap';
@@ -20,8 +20,8 @@ export default function EInvoice() {
       "@type": "LocalBusiness",
       "name": "Hóa đơn điện tử Viettel Đắk Lắk - S-Invoice",
       "image": "https://images.unsplash.com/photo-1586473219010-2ffc57b0d282?auto=format&fit=crop&q=80&w=1200",
-      "@id": "https://viettel.daklak.vn/e-invoice",
-      "url": "https://viettel.daklak.vn/e-invoice",
+      "@id": "https://vietteldaklak.vn/e-invoice",
+      "url": "https://vietteldaklak.vn/e-invoice",
       "telephone": "0989113602",
       "address": {
         "@type": "PostalAddress",

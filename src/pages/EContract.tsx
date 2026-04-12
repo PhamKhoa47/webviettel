@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
-import { FileCheck, ShieldCheck, CheckCircle2, Smartphone, Globe, Lock, ArrowRight, FileText, Phone } from 'lucide-react';
+import { FileCheck, ShieldCheck, Zap, CheckCircle2, Clock, Smartphone, Globe, Lock, ArrowRight, Activity, Cpu, FileText, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { BRAND } from '../constants';
 import gsap from 'gsap';
@@ -20,8 +20,8 @@ export default function EContract() {
       "@type": "LocalBusiness",
       "name": "Hợp đồng điện tử Viettel Đắk Lắk - vContract",
       "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1200",
-      "@id": "https://viettel.daklak.vn/e-contract",
-      "url": "https://viettel.daklak.vn/e-contract",
+      "@id": "https://vietteldaklak.vn/e-contract",
+      "url": "https://vietteldaklak.vn/e-contract",
       "telephone": "0989113602",
       "address": {
         "@type": "PostalAddress",
@@ -212,14 +212,14 @@ export default function EContract() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: 'Pháp lý đảm bảo', desc: 'Tuân thủ Luật Giao dịch điện tử 2005 và Nghị định 130/2018/NĐ-CP của Chính phủ.', icon: ShieldCheck },
-              { title: 'Ký kết đa nền tảng', desc: 'Hỗ trợ ký trên máy tính, máy tính bảng và smartphone thông qua App Viettel-CA.', icon: Smartphone },
-              { title: 'Bảo mật tuyệt đối', desc: 'Mã hóa dữ liệu chuẩn quốc tế, chống giả mạo và thay đổi nội dung hợp đồng.', icon: Lock },
-              { title: 'Hạ tầng Data Center', desc: 'Lưu trữ an toàn trên hạ tầng Data Center chuẩn Tier III quốc tế của Viettel.', icon: Globe }
+              { title: 'Pháp lý đảm bảo', desc: 'Tuân thủ Luật Giao dịch điện tử 2005 và Nghị định 130/2018/NĐ-CP của Chính phủ.', icon: <ShieldCheck /> },
+              { title: 'Ký kết đa nền tảng', desc: 'Hỗ trợ ký trên máy tính, máy tính bảng và smartphone thông qua App Viettel-CA.', icon: <Smartphone /> },
+              { title: 'Bảo mật tuyệt đối', desc: 'Mã hóa dữ liệu chuẩn quốc tế, chống giả mạo và thay đổi nội dung hợp đồng.', icon: <Lock /> },
+              { title: 'Hạ tầng Data Center', desc: 'Lưu trữ an toàn trên hạ tầng Data Center chuẩn Tier III quốc tế của Viettel.', icon: <Globe /> }
             ].map((item, i) => (
               <div key={i} className="feature-card glass-card p-10 border-slate-100 hover:border-viettel-red/50 transition-all group">
                 <div className="w-16 h-16 bg-white text-viettel-red rounded-2xl flex items-center justify-center mb-8 group-hover:bg-viettel-red group-hover:text-white transition-all duration-500">
-                  <item.icon size={32} />
+                  {React.cloneElement(item.icon as React.ReactElement, { size: 32 })}
                 </div>
                 <h3 className="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight group-hover:text-viettel-red transition-colors">{item.title}</h3>
                 <p className="text-slate-600 leading-relaxed font-medium">{item.desc}</p>

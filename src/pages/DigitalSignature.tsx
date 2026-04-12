@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
-import { ShieldCheck, Zap, Clock, CheckCircle2, FileText, Briefcase, Lock, ArrowRight, Phone, HelpCircle } from 'lucide-react';
+import { ShieldCheck, Zap, Clock, CheckCircle2, FileText, Briefcase, Activity, Lock, Cpu, ArrowRight, Phone, HelpCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { PRICING_CA, BRAND } from '../constants';
 import gsap from 'gsap';
@@ -20,8 +20,8 @@ export default function DigitalSignature() {
       "@type": "LocalBusiness",
       "name": "Chữ ký số Viettel Đắk Lắk - Phạm Văn Khoa",
       "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200",
-      "@id": "https://viettel.daklak.vn/digital-signature",
-      "url": "https://viettel.daklak.vn/digital-signature",
+      "@id": "https://vietteldaklak.vn/digital-signature",
+      "url": "https://vietteldaklak.vn/digital-signature",
       "telephone": "0989113602",
       "address": {
         "@type": "PostalAddress",

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, MapPin, Share2, PlayCircle, MessageCircle, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Send, Youtube, MessageCircle, Globe } from 'lucide-react';
 import { BRAND, SERVICES } from '../constants';
 
 export default function Footer() {
@@ -25,7 +25,7 @@ export default function Footer() {
               Tiên phong kiến tạo xã hội số tại Đắk Lắk. Chúng tôi cung cấp giải pháp viễn thông và công nghệ thông tin toàn diện nhất.
             </p>
             <div className="flex space-x-4">
-              {[PlayCircle, Share2, MessageCircle, Send].map((Icon, i) => (
+              {[Facebook, Youtube, MessageCircle, Send].map((Icon, i) => (
                 <a key={i} href="#" className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center hover:bg-viettel-red hover:text-white transition-all duration-500 border border-slate-200 hover:-translate-y-1">
                   <Icon size={20} />
                 </a>
