@@ -60,7 +60,14 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="w-10 h-10 rounded-xl overflow-hidden shadow-lg shadow-viettel-red/10 group-hover:scale-110 transition-transform duration-500">
-              <img src="https://img-zlr3.tv360.vn/game-tet/real/im1.0/118597f64d266dc0198ad56042ee09ebd50a1513.png" alt="Viettel Đắk Lắk" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              <img 
+                src="https://img-zlr3.tv360.vn/game-tet/real/im1.0/118597f64d266dc0198ad56042ee09ebd50a1513.png" 
+                alt="Viettel Đắk Lắk" 
+                className="w-full h-full object-cover" 
+                referrerPolicy="no-referrer"
+                width="40"
+                height="40"
+              />
             </div>
             <div className="flex flex-col">
               <span className="font-black text-lg leading-none tracking-tighter text-slate-900 uppercase">VIETTEL</span>

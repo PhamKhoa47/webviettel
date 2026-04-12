@@ -137,13 +137,21 @@ export default function InternetViettel() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8c?auto=format&fit=crop&q=80&w=2000" 
-            alt="Lắp mạng internet Wifi Viettel tại Đắk Lắk - Tốc độ cao ổn định" 
-            className="w-full h-full object-cover opacity-20 scale-110"
-            referrerPolicy="no-referrer"
-            loading="eager"
-          />
+          <picture>
+            <source 
+              media="(max-width: 768px)" 
+              srcSet="https://images.unsplash.com/photo-1551703599-6b3e8379aa8c?auto=format&fit=crop&q=60&w=800" 
+            />
+            <img 
+              src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8c?auto=format&fit=crop&q=80&w=1600" 
+              alt="Lắp mạng internet Wifi Viettel tại Đắk Lắk - Tốc độ cao ổn định" 
+              className="w-full h-full object-cover opacity-20 scale-110"
+              referrerPolicy="no-referrer"
+              loading="eager"
+              width="1600"
+              height="900"
+            />
+          </picture>
           <div className="absolute inset-0 bg-gradient-to-b from-slate-50/50 via-slate-50/80 to-slate-50" />
           
           {/* Animated background elements */}
@@ -387,11 +395,13 @@ export default function InternetViettel() {
               <div className="relative">
                 <div className="absolute -inset-4 bg-viettel-red/20 blur-2xl rounded-[3rem] animate-pulse" />
                 <img 
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" 
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=60&w=800" 
                   alt="Dak Lak Network" 
                   className="relative rounded-[2rem] shadow-2xl border border-slate-200"
                   referrerPolicy="no-referrer"
                   loading="lazy"
+                  width="800"
+                  height="600"
                 />
                 <div className="absolute -bottom-8 -right-8 glass-card p-8 border-viettel-red/30 max-w-xs">
                   <div className="flex items-center space-x-3 mb-4">

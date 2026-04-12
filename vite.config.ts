@@ -8,7 +8,8 @@ export default defineConfig(({mode}) => {
   const version = Date.now(); // Tạo version dựa trên thời gian build
 
   return {
-    base: '/',
+    // CRITICAL: Use '/' for custom domains at root (viettel.daklak.vn)
+    base: '/', 
     plugins: [
       react(), 
       tailwindcss(),
@@ -26,7 +27,16 @@ export default defineConfig(({mode}) => {
       minify: 'esbuild',
       sourcemap: false,
       outDir: 'dist',
+      assetsDir: 'assets',
       emptyOutDir: true,
+      rollupOptions: {
+        output: {
+          // Ensures clean filenames for assets
+          chunkFileNames: 'assets/js/[name]-[hash].js',
+          entryFileNames: 'assets/js/[name]-[hash].js',
+          assetFileNames: 'assets/[ext]/[name]-[hash].[ext]',
+        },
+      },
     },
     server: {
       // HMR is disabled in AI Studio via DISABLE_HMR env var.

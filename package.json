@@ -7,7 +7,9 @@
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -t true"
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",

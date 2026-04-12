@@ -126,13 +126,21 @@ export default function Home() {
       {/* Hero Section */}
       <section ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2072" 
-            alt="Viettel Đắk Lắk - Hạ tầng số dẫn đầu công nghệ" 
-            className="hero-bg w-full h-full object-cover opacity-20 grayscale"
-            referrerPolicy="no-referrer"
-            loading="eager"
-          />
+          <picture>
+            <source 
+              media="(max-width: 768px)" 
+              srcSet="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=60&w=800" 
+            />
+            <img 
+              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1600" 
+              alt="Viettel Đắk Lắk - Hạ tầng số dẫn đầu công nghệ" 
+              className="hero-bg w-full h-full object-cover opacity-20 grayscale"
+              referrerPolicy="no-referrer"
+              loading="eager"
+              width="1600"
+              height="900"
+            />
+          </picture>
           <div className="absolute inset-0 bg-gradient-to-b from-slate-50/60 via-slate-50/90 to-slate-50" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(238,0,0,0.15)_0%,transparent_70%)]" />
         </div>
@@ -304,11 +312,13 @@ export default function Home() {
             <div className="relative animate-on-scroll group">
               <div className="absolute -inset-4 bg-viettel-red/20 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
               <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000" 
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=60&w=800" 
                 alt="Support Team" 
                 className="relative z-10 rounded-[3rem] shadow-2xl grayscale group-hover:grayscale-0 transition-all duration-700 border border-slate-200"
                 referrerPolicy="no-referrer"
                 loading="lazy"
+                width="800"
+                height="600"
               />
               <div className="absolute -bottom-10 -left-10 glass-card p-6 border-viettel-red/30 animate-float">
                 <div className="text-4xl font-black text-viettel-red">24/7</div>
