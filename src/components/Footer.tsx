@@ -100,7 +100,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
             <p className="text-sm text-slate-500 font-medium">© {new Date().getFullYear()} Viettel Đắk Lắk. All rights reserved.</p>
             <div className="flex space-x-8">
-              <Link to="/privacy" className="text-sm text-slate-500 hover:text-slate-900 transition-colors">Điều khoản</Link>
+              <Link to="/terms" className="text-sm text-slate-500 hover:text-slate-900 transition-colors">Điều khoản</Link>
               <Link to="/privacy" className="text-sm text-slate-500 hover:text-slate-900 transition-colors">Bảo mật</Link>
             </div>
           </div>

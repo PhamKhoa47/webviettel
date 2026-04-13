@@ -20,6 +20,8 @@ const PostArticle = lazy(() => import('./pages/PostArticle'));
 const Contact = lazy(() => import('./pages/Contact'));
 const LocationArticle = lazy(() => import('./pages/LocationArticle'));
 const Resources = lazy(() => import('./pages/Resources'));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
+const TermsOfService = lazy(() => import('./pages/TermsOfService'));
 
 export default function App() {
   // Xử lý redirect từ 404.html
@@ -53,6 +55,8 @@ export default function App() {
                 <Route path="/blog/:slug" element={<LocationArticle />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/resources" element={<Resources />} />
+                <Route path="/privacy" element={<PrivacyPolicy />} />
+                <Route path="/terms" element={<TermsOfService />} />
                 <Route path="*" element={<Home />} />
               </Routes>
             </Suspense>
