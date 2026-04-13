@@ -5,7 +5,6 @@ export const BRAND = {
   address: 'Số 48 Lý Tự Trọng, Phường Tân An, Tỉnh Đắk Lắk, Việt Nam',
   hotlineSupport: '1800.8119',
   workingHours: 'Thứ 2 - Chủ Nhật: 07:30 - 20:00',
-  representative: 'Phạm Văn Khoa',
   position: 'Chuyên viên Tư vấn Giải pháp Doanh nghiệp',
 };
 

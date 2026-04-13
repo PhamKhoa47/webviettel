@@ -18,7 +18,7 @@ export default function DigitalSignature() {
     const schemaData = {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Chữ ký số Viettel Đắk Lắk - Phạm Văn Khoa",
+      "name": "Chữ ký số Viettel Đắk Lắk",
       "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200",
       "@id": "https://viettel.daklak.vn/digital-signature",
       "url": "https://viettel.daklak.vn/digital-signature",
@@ -50,7 +50,7 @@ export default function DigitalSignature() {
           "name": "Đăng ký chữ ký số Viettel tại Buôn Ma Thuột mất bao lâu?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Viettel Đắk Lắk cam kết bàn giao thiết bị USB Token và kích hoạt chứng thư số ngay trong ngày. Chuyên viên Phạm Văn Khoa sẽ hỗ trợ cài đặt tận nơi trong vòng 2 giờ."
+            "text": "Viettel Đắk Lắk cam kết bàn giao thiết bị USB Token và kích hoạt chứng thư số ngay trong ngày. Chúng tôi hỗ trợ cài đặt tận nơi trong vòng 2 giờ."
           }
         }
       ]
@@ -106,7 +106,7 @@ export default function DigitalSignature() {
     <div className="bg-slate-50 text-slate-900 min-h-screen">
       <SEO 
         title="Chữ ký số Viettel-CA Đắk Lắk - Đăng ký & Gia hạn 2026"
-        description="Dịch vụ Chữ ký số Viettel-CA tại Đắk Lắk uy tín, bảo mật. Hỗ trợ kê khai thuế, hải quan, BHXH. Bàn giao USB Token tận nơi trong 2h bởi chuyên viên Phạm Văn Khoa."
+        description="Dịch vụ Chữ ký số Viettel-CA tại Đắk Lắk uy tín, bảo mật. Hỗ trợ kê khai thuế, hải quan, BHXH. Bàn giao USB Token tận nơi trong 2h."
         keywords="chữ ký số viettel đắk lắk, viettel-ca đắk lắk, gia hạn chữ ký số viettel đắk lắk, usb token viettel"
       />
       {/* Header */}
@@ -136,7 +136,7 @@ export default function DigitalSignature() {
               CHỮ KÝ SỐ <br /><span className="text-viettel-red">VIETTEL-CA ĐẮK LẮK</span>
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto font-medium leading-relaxed">
-              Giải pháp chữ ký số Viettel-CA tại Đắk Lắk cho doanh nghiệp, cá nhân. Kê khai thuế, hải quan, BHXH an toàn tuyệt đối. Hỗ trợ cài đặt tận nơi bởi chuyên viên <Link to="/contact" className="text-viettel-red hover:underline">Phạm Văn Khoa</Link>.
+              Giải pháp chữ ký số Viettel-CA tại Đắk Lắk cho doanh nghiệp, cá nhân. Kê khai thuế, hải quan, BHXH an toàn tuyệt đối. Hỗ trợ cài đặt tận nơi bởi chuyên viên Viettel.
             </p>
             <div className="mt-12 flex flex-wrap justify-center gap-6">
               <Link to="/contact" className="btn-primary px-10 py-4 text-lg">
@@ -183,7 +183,7 @@ export default function DigitalSignature() {
               </h2>
               <div className="bg-slate-50 p-6 rounded-2xl border-l-4 border-viettel-red mb-4">
                 <p className="text-slate-900 font-black text-lg leading-relaxed">
-                  Viettel Đắk Lắk cam kết bàn giao thiết bị USB Token và kích hoạt chứng thư số <span className="text-viettel-red">ngay trong ngày</span>. Chuyên viên Phạm Văn Khoa sẽ hỗ trợ cài đặt tận nơi trong vòng 2 giờ.
+                  Viettel Đắk Lắk cam kết bàn giao thiết bị USB Token và kích hoạt chứng thư số <span className="text-viettel-red">ngay trong ngày</span>. Chúng tôi hỗ trợ cài đặt tận nơi trong vòng 2 giờ.
                 </p>
               </div>
               <p className="text-slate-600 leading-relaxed font-medium">

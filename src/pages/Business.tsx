@@ -18,7 +18,7 @@ export default function Business() {
     const schemaData = {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Giải pháp doanh nghiệp Viettel Đắk Lắk - Phạm Văn Khoa",
+      "name": "Giải pháp doanh nghiệp Viettel Đắk Lắk",
       "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
       "@id": "https://viettel.daklak.vn/business",
       "url": "https://viettel.daklak.vn/business",
@@ -155,7 +155,7 @@ export default function Business() {
     <div className="bg-slate-50 text-slate-900 min-h-screen">
       <SEO 
         title="Giải pháp số cho Doanh nghiệp Đắk Lắk - Viettel 2026"
-        description="Hệ sinh thái giải pháp số Viettel Đắk Lắk cho doanh nghiệp: Chữ ký số, Hóa đơn điện tử, Hợp đồng điện tử, Phần mềm bán hàng. Tư vấn bởi Phạm Văn Khoa."
+        description="Hệ sinh thái giải pháp số Viettel Đắk Lắk cho doanh nghiệp: Chữ ký số, Hóa đơn điện tử, Hợp đồng điện tử, Phần mềm bán hàng."
         keywords="giải pháp doanh nghiệp viettel đắk lắk, chuyển đổi số đắk lắk, phần mềm quản lý doanh nghiệp đắk lắk, viettel business đắk lắk"
       />
       {/* Hero Section */}
@@ -178,7 +178,7 @@ export default function Business() {
               GIẢI PHÁP <br /><span className="text-viettel-red">DOANH NGHIỆP ĐẮK LẮK</span>
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto font-medium leading-relaxed">
-              Viettel Đắk Lắk đồng hành cùng doanh nghiệp trong hành trình chuyển đổi số, tối ưu hóa quy trình và bứt phá doanh thu với công nghệ tiên phong. Hỗ trợ bởi chuyên viên <Link to="/contact" className="text-viettel-red hover:underline">Phạm Văn Khoa</Link>.
+              Viettel Đắk Lắk đồng hành cùng doanh nghiệp trong hành trình chuyển đổi số, tối ưu hóa quy trình và bứt phá doanh thu với công nghệ tiên phong. Hỗ trợ bởi chuyên viên Viettel.
             </p>
             <div className="mt-12 flex flex-wrap justify-center gap-6">
               <Link to="/contact" className="btn-primary px-10 py-4 text-lg">

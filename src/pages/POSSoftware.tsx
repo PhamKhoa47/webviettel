@@ -50,7 +50,7 @@ export default function POSSoftware() {
           "name": "Tendoo Viettel có hỗ trợ kết nối máy in hóa đơn và máy quét mã vạch không?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Có, phần mềm Tendoo hỗ trợ kết nối đa thiết bị: máy in bill, máy quét mã vạch, ngăn kéo đựng tiền. Chuyên viên Phạm Văn Khoa sẽ hỗ trợ lắp đặt và hướng dẫn sử dụng tận nơi tại Đắk Lắk."
+            "text": "Có, phần mềm Tendoo hỗ trợ kết nối đa thiết bị: máy in bill, máy quét mã vạch, ngăn kéo đựng tiền. Chúng tôi hỗ trợ lắp đặt và hướng dẫn sử dụng tận nơi tại Đắk Lắk."
           }
         }
       ]
@@ -106,7 +106,7 @@ export default function POSSoftware() {
     <div className="bg-slate-50 text-slate-900 min-h-screen">
       <SEO 
         title="Phần mềm bán hàng Viettel Tendoo Đắk Lắk - Quản lý 2026"
-        description="Giải pháp quản lý bán hàng Tendoo Viettel tại Đắk Lắk. Quản lý kho, doanh thu, khách hàng dễ dàng trên điện thoại. Hỗ trợ lắp đặt tận nơi bởi Phạm Văn Khoa."
+        description="Giải pháp quản lý bán hàng Tendoo Viettel tại Đắk Lắk. Quản lý kho, doanh thu, khách hàng dễ dàng trên điện thoại. Hỗ trợ lắp đặt tận nơi bởi Viettel."
         keywords="phần mềm bán hàng viettel đắk lắk, tendoo viettel đắk lắk, quản lý bán hàng viettel, máy in hóa đơn đắk lắk"
       />
       {/* Hero Section */}
@@ -137,7 +137,7 @@ export default function POSSoftware() {
                 PHẦN MỀM <br /><span className="text-emerald-500">TENDOO VIETTEL</span> <br />ĐẮK LẮK
               </h1>
               <p className="text-xl text-slate-600 mb-10 leading-relaxed font-medium">
-                Giải pháp quản lý bán hàng toàn diện Tendoo Viettel tại Đắk Lắk. Quản lý kho, doanh thu, khách hàng dễ dàng trên điện thoại và máy tính. Hỗ trợ bởi chuyên viên <Link to="/contact" className="text-emerald-500 hover:underline">Phạm Văn Khoa</Link>.
+                Giải pháp quản lý bán hàng toàn diện Tendoo Viettel tại Đắk Lắk. Quản lý kho, doanh thu, khách hàng dễ dàng trên điện thoại và máy tính. Hỗ trợ bởi chuyên viên Viettel.
               </p>
               <div className="flex flex-wrap gap-6">
                 <Link to="/contact" className="bg-emerald-600 hover:bg-emerald-500 text-white px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-sm transition-all shadow-2xl shadow-emerald-600/20 flex items-center group">
@@ -206,7 +206,7 @@ export default function POSSoftware() {
               </h2>
               <div className="bg-slate-50 p-6 rounded-2xl border-l-4 border-emerald-500 mb-4">
                 <p className="text-slate-900 font-black text-lg leading-relaxed">
-                  Có, phần mềm Tendoo hỗ trợ kết nối đa thiết bị: <span className="text-emerald-500">máy in bill, máy quét mã vạch, ngăn kéo đựng tiền</span>. Chuyên viên Phạm Văn Khoa sẽ hỗ trợ lắp đặt và hướng dẫn sử dụng tận nơi tại Đắk Lắk.
+                  Có, phần mềm Tendoo hỗ trợ kết nối đa thiết bị: <span className="text-emerald-500">máy in bill, máy quét mã vạch, ngăn kéo đựng tiền</span>. Chúng tôi hỗ trợ lắp đặt và hướng dẫn sử dụng tận nơi tại Đắk Lắk.
                 </p>
               </div>
               <p className="text-slate-600 leading-relaxed font-medium">

@@ -15,7 +15,7 @@ export default function Contact() {
       "@type": "ContactPage",
       "mainEntity": {
         "@type": "LocalBusiness",
-        "name": "Viettel Đắk Lắk - Chuyên viên Phạm Văn Khoa",
+        "name": "Viettel Đắk Lắk - Giải pháp Viễn thông & Công nghệ",
         "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200",
         "@id": "https://viettel.daklak.vn/contact",
         "url": "https://viettel.daklak.vn/contact",
@@ -91,8 +91,8 @@ export default function Contact() {
     <div className="bg-slate-50 text-slate-900 min-h-screen">
       <SEO 
         title="Liên hệ Viettel Đắk Lắk - Hỗ trợ khách hàng 24/7"
-        description="Liên hệ chuyên viên Viettel Đắk Lắk - Phạm Văn Khoa. Hỗ trợ lắp mạng Internet, Chữ ký số, Hóa đơn điện tử. Tư vấn tận nơi tại Buôn Ma Thuột và các huyện."
-        keywords="liên hệ viettel đắk lắk, tổng đài viettel đắk lắk, số điện thoại viettel buôn ma thuột, phạm văn khoa viettel"
+        description="Liên hệ Viettel Đắk Lắk. Hỗ trợ lắp mạng Internet, Chữ ký số, Hóa đơn điện tử. Tư vấn tận nơi tại Buôn Ma Thuột và các huyện."
+        keywords="liên hệ viettel đắk lắk, tổng đài viettel đắk lắk, số điện thoại viettel buôn ma thuột"
       />
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden">

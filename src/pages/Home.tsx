@@ -23,7 +23,7 @@ export default function Home() {
     const schemaData = {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Viettel Đắk Lắk - Chuyên viên Phạm Văn Khoa",
+      "name": "Viettel Đắk Lắk - Giải pháp Viễn thông & Công nghệ",
       "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200",
       "@id": "https://viettel.daklak.vn",
       "url": "https://viettel.daklak.vn",
@@ -119,7 +119,7 @@ export default function Home() {
     <div className="flex flex-col w-full bg-slate-50 text-slate-900">
       <SEO 
         title="Viettel Đắk Lắk - Lắp mạng Internet, Wifi, Chữ ký số 2026"
-        description="Dịch vụ Viettel tại Đắk Lắk: Lắp mạng Internet Wifi 6, Chữ ký số Viettel-CA, Hóa đơn điện tử S-Invoice. Hỗ trợ nhanh chóng 24/7 bởi chuyên viên Phạm Văn Khoa."
+        description="Dịch vụ Viettel tại Đắk Lắk: Lắp mạng Internet Wifi 6, Chữ ký số Viettel-CA, Hóa đơn điện tử S-Invoice. Hỗ trợ nhanh chóng 24/7."
         keywords="viettel dak lak, lap mang viettel dak lak, wifi viettel buon ma thuot, chu ky so viettel dak lak, hoa don dien tu viettel"
       />
       
@@ -149,7 +149,7 @@ export default function Home() {
           <div className="hero-content max-w-5xl">
             <div className="inline-flex items-center space-x-2 mb-8 px-4 py-2 bg-white border border-slate-200 rounded-full backdrop-blur-md">
               <Activity className="text-viettel-red animate-pulse" size={16} />
-              <span className="text-slate-900/80 text-[10px] font-black uppercase tracking-[0.3em]">Viettel Đắk Lắk - Chuyên viên Phạm Văn Khoa</span>
+              <span className="text-slate-900/80 text-[10px] font-black uppercase tracking-[0.3em]">Viettel Đắk Lắk - Giải pháp Viễn thông & Công nghệ</span>
             </div>
             <h1 className="text-6xl md:text-9xl font-black text-slate-900 leading-none mb-10 tracking-tighter uppercase">
               DỊCH VỤ <br />
@@ -378,7 +378,7 @@ export default function Home() {
                   ĐĂNG KÝ <br /><span className="text-viettel-red">TƯ VẤN NHANH</span>
                 </h2>
                 <p className="text-slate-600 text-xl mb-12 font-medium leading-relaxed">
-                  Để lại thông tin, chuyên viên Viettel tại Đắk Lắk sẽ liên hệ tư vấn ngay cho bạn trong 15 phút.
+                  Để lại thông tin, Viettel Đắk Lắk sẽ liên hệ tư vấn ngay cho bạn trong 15 phút.
                 </p>
                 
                 <div className="space-y-10">
@@ -454,11 +454,11 @@ export default function Home() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-12">
             <div className="flex items-center space-x-6 group">
               <div className="w-20 h-20 bg-viettel-red rounded-3xl flex items-center justify-center text-white font-black text-3xl shadow-2xl shadow-viettel-red/20 group-hover:rotate-6 transition-transform">
-                {BRAND.representative[0]}
+                V
               </div>
               <div>
-                <h3 className="text-3xl font-black text-slate-900 uppercase tracking-tight">{BRAND.representative}</h3>
-                <p className="text-xs font-black text-viettel-red uppercase tracking-[0.3em]">{BRAND.position}</p>
+                <h3 className="text-3xl font-black text-slate-900 uppercase tracking-tight">Viettel Đắk Lắk</h3>
+                <p className="text-xs font-black text-viettel-red uppercase tracking-[0.3em]">Hạ tầng số dẫn đầu</p>
               </div>
             </div>
             <div className="flex flex-col items-center md:items-end">

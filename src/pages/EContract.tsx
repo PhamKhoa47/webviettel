@@ -106,7 +106,7 @@ export default function EContract() {
     <div className="bg-slate-50 text-slate-900 min-h-screen">
       <SEO 
         title="Hợp đồng điện tử Viettel vContract Đắk Lắk - Giải pháp ký số 2026"
-        description="Dịch vụ Hợp đồng điện tử Viettel vContract tại Đắk Lắk. Tiết kiệm 90% chi phí in ấn, chuyển phát. Ký kết an toàn, pháp lý đầy đủ. Tư vấn bởi Phạm Văn Khoa."
+        description="Dịch vụ Hợp đồng điện tử Viettel vContract tại Đắk Lắk. Tiết kiệm 90% chi phí in ấn, chuyển phát. Ký kết an toàn, pháp lý đầy đủ."
         keywords="hợp đồng điện tử viettel đắk lắk, vcontract viettel đắk lắk, ký hợp đồng điện tử viettel, báo giá vcontract"
       />
       {/* Hero Section */}
@@ -137,7 +137,7 @@ export default function EContract() {
                 HỢP ĐỒNG <br /><span className="text-viettel-red">V-CONTRACT VIETTEL</span>
               </h1>
               <p className="text-xl text-slate-600 mb-10 leading-relaxed font-medium max-w-2xl">
-                Ký kết hợp đồng mọi lúc, mọi nơi với vContract Viettel tại Đắk Lắk. Tiết kiệm thời gian, chi phí và nâng cao hiệu quả quản trị doanh nghiệp Buôn Ma Thuột cùng chuyên viên <Link to="/contact" className="text-viettel-red hover:underline">Phạm Văn Khoa</Link>.
+                Ký kết hợp đồng mọi lúc, mọi nơi với vContract Viettel tại Đắk Lắk. Tiết kiệm thời gian, chi phí và nâng cao hiệu quả quản trị doanh nghiệp Buôn Ma Thuột cùng chuyên viên Viettel.
               </p>
               <div className="flex flex-wrap gap-6">
                 <Link to="/contact" className="btn-primary px-10 py-5 text-lg group">
@@ -177,7 +177,7 @@ export default function EContract() {
                 </p>
               </div>
               <p className="text-slate-600 leading-relaxed font-medium">
-                Viettel cung cấp nhiều gói cước linh hoạt dựa trên số lượng hợp đồng ký kết hàng năm. Doanh nghiệp tại Đắk Lắk có thể bắt đầu với gói nhỏ và nâng cấp dễ dàng khi quy mô mở rộng. Liên hệ Phạm Văn Khoa 0989113602 để nhận báo giá chi tiết theo nhu cầu.
+                Viettel cung cấp nhiều gói cước linh hoạt dựa trên số lượng hợp đồng ký kết hàng năm. Doanh nghiệp tại Đắk Lắk có thể bắt đầu với gói nhỏ và nâng cấp dễ dàng khi quy mô mở rộng. Liên hệ hotline 0989113602 để nhận báo giá chi tiết theo nhu cầu.
               </p>
             </div>
 

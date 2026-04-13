@@ -104,10 +104,14 @@ export default function Footer() {
               <Link to="/privacy" className="text-sm text-slate-500 hover:text-slate-900 transition-colors">Bảo mật</Link>
             </div>
           </div>
-          <div className="flex flex-col items-center md:items-end">
-            <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Đại diện kinh doanh</p>
-            <p className="text-sm text-slate-900 font-black uppercase tracking-tight">
-              {BRAND.representative} - <span className="text-viettel-red">{BRAND.position}</span>
+          <div className="flex flex-col items-center md:items-end text-center md:text-right">
+            <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Ghi chú</p>
+            <p className="text-[11px] text-slate-500 font-medium max-w-md leading-relaxed">
+              Đây là trang giới thiệu sản phẩm của Viettel tại Đắk Lắk. <br />
+              Trang web chính thức của Tập đoàn: 
+              <a href="https://vietteltelecom.vn" target="_blank" rel="noopener noreferrer" className="text-viettel-red hover:underline ml-1">vietteltelecom.vn</a>, 
+              <a href="https://viettel.vn" target="_blank" rel="noopener noreferrer" className="text-viettel-red hover:underline ml-1">viettel.vn</a>, 
+              <a href="https://viettel.com.vn" target="_blank" rel="noopener noreferrer" className="text-viettel-red hover:underline ml-1">viettel.com.vn</a>
             </p>
           </div>
         </div>

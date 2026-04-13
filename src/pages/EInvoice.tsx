@@ -130,7 +130,7 @@ export default function EInvoice() {
                 HÓA ĐƠN <br /><span className="text-viettel-red">S-INVOICE VIETTEL</span>
               </h1>
               <p className="text-xl text-slate-600 mb-10 leading-relaxed font-medium">
-                Giải pháp hóa đơn điện tử Viettel S-Invoice tại Đắk Lắk uy tín, an toàn. Tuân thủ Thông tư 78 & Nghị định 123. Hỗ trợ doanh nghiệp Buôn Ma Thuột chuyển đổi số nhanh chóng cùng chuyên viên <Link to="/contact" className="text-viettel-red hover:underline">Phạm Văn Khoa</Link>.
+                Giải pháp hóa đơn điện tử Viettel S-Invoice tại Đắk Lắk uy tín, an toàn. Tuân thủ Thông tư 78 & Nghị định 123. Hỗ trợ doanh nghiệp Buôn Ma Thuột chuyển đổi số nhanh chóng cùng chuyên viên Viettel.
               </p>
               <div className="flex flex-wrap gap-6">
                 <Link to="/contact" className="btn-primary px-10 py-4 text-lg">

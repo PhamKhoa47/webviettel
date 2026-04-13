@@ -15,7 +15,7 @@ export const BLOG_POSTS: BlogPost[] = [
     id: '1',
     slug: 'huong-dan-dang-ky-thanh-lap-doanh-nghiep-moi-nhat-2026',
     title: 'Thành lập doanh nghiệp tại Đắk Lắk 2026: Thủ tục & Giải pháp số trọn gói',
-    excerpt: 'Hướng dẫn chi tiết thủ tục thành lập doanh nghiệp tại Đắk Lắk 2026. Combo trọn gói: GPKD + Con dấu + Chữ ký số + Hóa đơn điện tử. Tư vấn miễn phí từ chuyên viên Viettel: 0989113602.',
+    excerpt: 'Hướng dẫn chi tiết thủ tục thành lập doanh nghiệp tại Đắk Lắk 2026. Combo trọn gói: GPKD + Con dấu + Chữ ký số + Hóa đơn điện tử. Tư vấn miễn phí từ chuyên viên Viettel.',
     content: `
       <p><em>Năm 2026, quy trình thành lập doanh nghiệp tại Đắk Lắk đã được số hóa hoàn toàn, thời gian cấp GPKD chỉ còn 2-3 ngày làm việc. Viettel Đắk Lắk cung cấp giải pháp "Khởi nghiệp số" trọn gói bao gồm Chữ ký số, Hóa đơn điện tử và Internet tốc độ cao với ưu đãi lên đến 40%.</em></p>
 
@@ -50,10 +50,8 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
 
       <h2>Liên hệ Nhân Viên Viettel Đắk Lắk hỗ trợ thủ tục trọn gói?</h2>
-      <p>Để được tư vấn miễn phí và hỗ trợ làm hồ sơ thành lập doanh nghiệp nhanh nhất, quý khách hãy liên hệ ngay với chúng tôi.</p>
-      <p>Chuyên viên hỗ trợ: <strong>Phạm Văn Khoa</strong><br />
-      Hotline: <strong>0989113602</strong><br />
-      Dịch vụ: Tư vấn thành lập doanh nghiệp + Combo giải pháp số Viettel.</p>
+      <p>Để được tư vấn miễn phí và hỗ trợ làm hồ sơ thành lập doanh nghiệp nhanh nhất, quý khách hãy liên hệ ngay với chúng tôi qua hotline 0989113602.</p>
+      <p>Dịch vụ: Tư vấn thành lập doanh nghiệp + Combo giải pháp số Viettel.</p>
 
       <script type="application/ld+json">
       {
@@ -116,8 +114,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <h2>Làm thế nào để đăng ký Hợp đồng điện tử Viettel tại Đắk Lắk?</h2>
       <p>Thủ tục đăng ký cực kỳ đơn giản, chỉ cần GPKD và CCCD người đại diện. Nhân viên Viettel sẽ hỗ trợ cấu hình hệ thống và hướng dẫn sử dụng tận nơi.</p>
-      <p>Liên hệ tư vấn: <strong>Phạm Văn Khoa</strong><br />
-      Hotline: <strong>0989113602</strong><br />
+      <p>Liên hệ tư vấn hotline: <strong>0989113602</strong><br />
       Khu vực: Hỗ trợ toàn tỉnh Đắk Lắk.</p>
       <p>Xem thêm các giải pháp <a href="/e-contract">Hợp đồng điện tử</a> hoặc <a href="/blog/post/chuyen-doi-so-cho-doanh-nghiep-dak-lak-bat-dau-tu-dau">lộ trình chuyển đổi số</a> cho doanh nghiệp SME.</p>
 
@@ -155,7 +152,7 @@ export const BLOG_POSTS: BlogPost[] = [
     id: '3',
     slug: 'top-5-goi-cuoc-internet-viettel-tot-nhat-cho-van-phong',
     title: 'Lắp mạng Viettel Đắk Lắk cho văn phòng: Top 5 gói cước tốt nhất 2026',
-    excerpt: 'Tư vấn lắp mạng Viettel Đắk Lắk cho văn phòng, doanh nghiệp 2026. Top 5 gói cước tốc độ cao, ổn định, hỗ trợ kỹ thuật 24/7. Liên hệ chuyên viên Phạm Văn Khoa 0989113602.',
+    excerpt: 'Tư vấn lắp mạng Viettel Đắk Lắk cho văn phòng, doanh nghiệp 2026. Top 5 gói cước tốc độ cao, ổn định, hỗ trợ kỹ thuật 24/7. Liên hệ hotline 0989113602.',
     content: `
       <p><em>Năm 2026, Viettel Đắk Lắk cung cấp các gói cước văn phòng với tốc độ từ 150Mbps đến 1Gbps, giá chỉ từ 250.000đ/tháng. Hơn 95% doanh nghiệp tại Buôn Ma Thuột tin dùng nhờ hạ tầng Wifi 6 hiện đại và hỗ trợ kỹ thuật trong 2 giờ.</em></p>
 
@@ -191,8 +188,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <h2>Liên hệ nhân viên Viettel Đắk Lắk hỗ trợ tư vấn tận nơi?</h2>
       <p>Để nhận báo giá chi tiết và khảo sát hạ tầng miễn phí, quý khách vui lòng liên hệ <strong>Nhân Viên Viettel</strong> phụ trách khu vực Đắk Lắk.</p>
-      <p>Chuyên viên tư vấn: <strong>Phạm Văn Khoa</strong><br />
-      Hotline/Zalo: <strong>0989113602</strong><br />
+      <p>Hotline/Zalo: <strong>0989113602</strong><br />
       Địa chỉ: Viettel Đắk Lắk - Buôn Ma Thuột.</p>
       <p>Chúng tôi cam kết hỗ trợ tận nơi tại tất cả các huyện: Cư M'gar, Krông Pắc, Ea Kar, Buôn Hồ... trong vòng 24h. Xem thêm các <a href="/internet-viettel">dịch vụ Internet Viettel</a> khác hoặc <a href="/contact">liên hệ hỗ trợ</a> ngay.</p>
 
@@ -222,7 +218,7 @@ export const BLOG_POSTS: BlogPost[] = [
             "name": "Số điện thoại tổng đài Viettel Đắk Lắk hỗ trợ doanh nghiệp là số nào?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Quý khách có thể liên hệ trực tiếp chuyên viên Phạm Văn Khoa qua số 0989113602 để được hỗ trợ nhanh nhất."
+              "text": "Quý khách có thể liên hệ trực tiếp tổng đài Viettel Đắk Lắk qua số 0989113602 để được hỗ trợ nhanh nhất."
             }
           }
         ]
@@ -238,7 +234,7 @@ export const BLOG_POSTS: BlogPost[] = [
     id: '4',
     slug: 'giai-phap-phan-mem-ban-hang-cho-ho-kinh-doanh-nho',
     title: 'Phần mềm bán hàng Viettel Đắk Lắk: Quản lý thông minh 2026',
-    excerpt: 'Giải pháp phần mềm bán hàng cho hộ kinh doanh tại Đắk Lắk 2026. Quản lý kho, doanh thu, tích hợp hóa đơn điện tử máy tính tiền. Liên hệ 0989113602.',
+    excerpt: 'Giải pháp phần mềm bán hàng cho hộ kinh doanh tại Đắk Lắk 2026. Quản lý kho, doanh thu, tích hợp hóa đơn điện tử máy tính tiền. Liên hệ hotline 0989113602.',
     content: `
       <p><em>Năm 2026, các hộ kinh doanh tại Buôn Ma Thuột bắt buộc phải sử dụng hóa đơn điện tử khởi tạo từ máy tính tiền. Phần mềm bán hàng Viettel giúp bạn tuân thủ pháp luật 100% và tăng 30% hiệu quả quản lý nhờ hệ thống báo cáo thời gian thực.</em></p>
 
@@ -267,8 +263,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <h2>Liên hệ lắp đặt phần mềm bán hàng Viettel tại Buôn Ma Thuột?</h2>
       <p>Quý khách cần tư vấn giải pháp quản lý bán hàng hiệu quả, vui lòng liên hệ chuyên viên phụ trách.</p>
-      <p>Chuyên viên tư vấn: <strong>Phạm Văn Khoa</strong><br />
-      Hotline/Zalo: <strong>0989113602</strong><br />
+      <p>Hotline/Zalo: <strong>0989113602</strong><br />
       Hỗ trợ: Cài đặt tận nơi, bảo hành trọn đời.</p>
       <p>Tìm hiểu thêm về <a href="/pos-software">Phần mềm bán hàng</a> hoặc các giải pháp <a href="/blog/post/tai-sao-doanh-nghiep-nen-chuyen-sang-hop-dong-dien-tu">chuyển đổi số</a> khác của Viettel.</p>
 
@@ -306,7 +301,7 @@ export const BLOG_POSTS: BlogPost[] = [
     id: '5',
     slug: 'chu-ky-so-viettel-ca-cong-cu-khong-the-thieu-cho-doanh-nghiep',
     title: 'Chữ ký số Viettel-CA Đắk Lắk: Bảng giá & Thủ tục mới nhất 2026',
-    excerpt: 'Đăng ký chữ ký số Viettel-CA tại Đắk Lắk 2026. Hỗ trợ kê khai thuế, BHXH, hóa đơn điện tử. Thủ tục nhanh gọn, bàn giao tận nơi bởi chuyên viên Phạm Văn Khoa 0989113602.',
+    excerpt: 'Đăng ký chữ ký số Viettel-CA tại Đắk Lắk 2026. Hỗ trợ kê khai thuế, BHXH, hóa đơn điện tử. Thủ tục nhanh gọn, bàn giao tận nơi hotline 0989113602.',
     content: `
       <p><em>Năm 2026, Chữ ký số Viettel-CA đã nâng cấp lên công nghệ Cloud-CA giúp ký kết không cần USB Token. Đây là lựa chọn số 1 của hơn 10.000 doanh nghiệp tại Đắk Lắk nhờ tính bảo mật tuyệt đối và sự hỗ trợ tận tình từ đội ngũ chuyên gia Viettel.</em></p>
 
@@ -335,8 +330,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <h2>Liên hệ Nhân Viên Viettel Đắk Lắk để được hỗ trợ tận nơi?</h2>
       <p>Quý khách cần đăng ký mới hoặc gia hạn chữ ký số, vui lòng liên hệ chuyên viên phụ trách khu vực Đắk Lắk để được phục vụ nhanh nhất.</p>
-      <p>Chuyên viên tư vấn: <strong>Phạm Văn Khoa</strong><br />
-      Hotline/Zalo: <strong>0989113602</strong><br />
+      <p>Hotline/Zalo: <strong>0989113602</strong><br />
       Địa chỉ: Viettel Đắk Lắk - Hỗ trợ tận nơi tại tất cả các huyện.</p>
       <p>Khám phá thêm các dịch vụ <a href="/digital-signature">Chữ ký số</a> hoặc giải pháp <a href="/blog/post/huong-dan-dang-ky-thanh-lap-doanh-nghiep-moi-nhat-2026">thành lập doanh nghiệp</a> trọn gói.</p>
 
@@ -374,7 +368,7 @@ export const BLOG_POSTS: BlogPost[] = [
     id: '6',
     slug: 'lap-mang-viettel-buon-ma-thuot-uu-dai-2026',
     title: 'Lắp mạng Viettel Buôn Ma Thuột 2026: Ưu đãi Modem Wifi 6 & Tặng cước',
-    excerpt: 'Tư vấn lắp mạng Viettel Buôn Ma Thuột 2026. Miễn phí Modem Wifi 6, tặng đến 2 tháng cước. Hỗ trợ lắp nhanh trong 24h bởi chuyên viên Phạm Văn Khoa 0989113602.',
+    excerpt: 'Tư vấn lắp mạng Viettel Buôn Ma Thuột 2026. Miễn phí Modem Wifi 6, tặng đến 2 tháng cước. Hỗ trợ lắp nhanh trong 24h hotline 0989113602.',
     content: `
       <p><em>Năm 2026, Viettel Đắk Lắk trang bị miễn phí Modem Wifi 6 cho tất cả khách hàng lắp mới tại Buôn Ma Thuột. Tốc độ vượt trội, phủ sóng cực mạnh, đáp ứng mọi nhu cầu từ học tập, làm việc đến giải trí chất lượng cao cho gia đình bạn.</em></p>
 
@@ -397,7 +391,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <h2>Liên hệ tổng đài lắp mạng Viettel Buôn Ma Thuột hỗ trợ nhanh nhất?</h2>
       <p>Quý khách cần tư vấn gói cước hoặc khảo sát hạ tầng, vui lòng liên hệ <strong>Nhân Viên Viettel</strong> phụ trách khu vực.</p>
-      <p>Hotline/Zalo: <strong>0989113602</strong> (Mr. Khoa)<br />
+      <p>Hotline/Zalo: <strong>0989113602</strong><br />
       Hỗ trợ: Tư vấn tận tình, lắp đặt trong ngày tại tất cả các phường xã.</p>
       <p>Xem thêm các gói <a href="/internet-viettel">Internet Viettel</a> hoặc giải pháp <a href="/blog/post/tai-sao-nen-chon-internet-viettel-cho-quan-cafe-dak-lak">Wifi cho quán cafe</a> tại Đắk Lắk.</p>
 
@@ -435,7 +429,7 @@ export const BLOG_POSTS: BlogPost[] = [
     id: '7',
     slug: 'so-sanh-cac-goi-cuoc-wifi-6-viettel-dak-lak',
     title: 'So sánh các gói cước Wifi 6 Viettel Đắk Lắk mới nhất 2026',
-    excerpt: 'Wifi 6 Viettel Đắk Lắk có gì mới? So sánh chi tiết các gói cước Star, Sun và Mesh 2026. Tư vấn giải pháp phủ sóng toàn diện từ chuyên viên Phạm Văn Khoa 0989113602.',
+    excerpt: 'Wifi 6 Viettel Đắk Lắk có gì mới? So sánh chi tiết các gói cước Star, Sun và Mesh 2026. Tư vấn giải pháp phủ sóng toàn diện hotline 0989113602.',
     content: `
       <p><em>Năm 2026, công nghệ Wifi 6 đã trở thành tiêu chuẩn bắt buộc cho mọi gia đình và doanh nghiệp tại Đắk Lắk. Viettel cung cấp các gói cước tối ưu giúp tăng tốc độ lên gấp 3 lần và giảm độ trễ đến 75% so với công nghệ Wifi 5 cũ.</em></p>
 
@@ -454,8 +448,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <h2>Làm sao để biết nhà mình phù hợp với gói Wifi 6 nào?</h2>
       <p>Để chọn được gói cước tối ưu nhất, bạn cần dựa trên diện tích nhà và số lượng người dùng. <strong>Nhân Viên Viettel</strong> sẽ hỗ trợ khảo sát thực tế và tư vấn giải pháp lắp đặt thiết bị hợp lý nhất.</p>
-      <p>Tư vấn kỹ thuật: <strong>Phạm Văn Khoa</strong><br />
-      Hotline: <strong>0989113602</strong><br />
+      <p>Hotline: <strong>0989113602</strong><br />
       Hỗ trợ: Khảo sát tận nơi miễn phí tại Buôn Ma Thuột và các huyện.</p>
       <p>Tham khảo thêm <a href="/blog/post/top-5-goi-cuoc-internet-viettel-tot-nhat-cho-van-phong">gói cước văn phòng</a> hoặc các <a href="/internet-viettel">gói cước gia đình</a> khác của Viettel Đắk Lắk.</p>
 
@@ -493,7 +486,7 @@ export const BLOG_POSTS: BlogPost[] = [
     id: '8',
     slug: 'huong-dan-su-dung-hoa-don-dien-tu-s-invoice-cho-ke-toan',
     title: 'Hướng dẫn S-Invoice Viettel Đắk Lắk 2026: Xuất hóa đơn nhanh & Chuẩn',
-    excerpt: 'Cẩm nang sử dụng hóa đơn điện tử S-Invoice Viettel tại Đắk Lắk 2026. Hướng dẫn xuất hóa đơn, tra cứu, báo cáo thuế. Hỗ trợ kỹ thuật 24/7: 0989113602.',
+    excerpt: 'Cẩm nang sử dụng hóa đơn điện tử S-Invoice Viettel tại Đắk Lắk 2026. Hướng dẫn xuất hóa đơn, tra cứu, báo cáo thuế. Hỗ trợ kỹ thuật 24/7 hotline 0989113602.',
     content: `
       <p><em>Năm 2026, hệ thống S-Invoice của Viettel đã tích hợp trí tuệ nhân tạo AI giúp tự động phân loại và kiểm tra tính hợp lệ của hóa đơn. Đây là công cụ đắc lực giúp kế toán tại Đắk Lắk giảm thiểu 50% thời gian xử lý chứng từ và hạn chế tối đa sai sót.</em></p>
 
@@ -514,8 +507,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <h2>Hỗ trợ kỹ thuật S-Invoice tại Đắk Lắk khi gặp sự cố?</h2>
       <p>Trong quá trình sử dụng, nếu gặp bất kỳ khó khăn nào về nghiệp vụ hoặc lỗi kỹ thuật, quý khách hãy liên hệ ngay với <strong>Nhân Viên Viettel</strong> để được hỗ trợ xử lý từ xa qua Ultraview hoặc hỗ trợ tận nơi.</p>
-      <p>Chuyên viên hỗ trợ: <strong>Phạm Văn Khoa</strong><br />
-      Hotline: <strong>0989113602</strong><br />
+      <p>Hotline: <strong>0989113602</strong><br />
       Dịch vụ: Cài đặt, hướng dẫn và bảo trì S-Invoice trọn đời.</p>
       <p>Xem thêm hướng dẫn về <a href="/blog/post/tai-sao-doanh-nghiep-nen-chuyen-sang-hop-dong-dien-tu">Hợp đồng điện tử</a> hoặc các giải pháp <a href="/business">doanh nghiệp số</a> khác.</p>
 
@@ -553,7 +545,7 @@ export const BLOG_POSTS: BlogPost[] = [
     id: '9',
     slug: 'chuyen-doi-so-cho-doanh-nghiep-dak-lak-bat-dau-tu-dau',
     title: 'Lộ trình chuyển đổi số doanh nghiệp Đắk Lắk 2026: Tinh gọn & Hiệu quả',
-    excerpt: 'Chuyển đổi số doanh nghiệp Đắk Lắk 2026 bắt đầu từ đâu? Lộ trình 3 bước từ hạ tầng Internet đến quản trị số toàn diện. Tư vấn từ chuyên viên Phạm Văn Khoa 0989113602.',
+    excerpt: 'Chuyển đổi số doanh nghiệp Đắk Lắk 2026 bắt đầu từ đâu? Lộ trình 3 bước từ hạ tầng Internet đến quản trị số toàn diện. Tư vấn hotline 0989113602.',
     content: `
       <p><em>Năm 2026, chuyển đổi số không còn là lựa chọn mà là điều kiện sống còn của doanh nghiệp tại Đắk Lắk. Viettel đồng hành cùng SME địa phương xây dựng lộ trình số hóa tinh gọn, tập trung vào hiệu quả thực tế và tối ưu chi phí đầu tư lên đến 30%.</em></p>
 
@@ -573,8 +565,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <h2>Tư vấn lộ trình chuyển đổi số miễn phí cho doanh nghiệp tại Đắk Lắk?</h2>
       <p>Đừng ngần ngại bắt đầu hành trình số hóa ngay hôm nay. Chuyên viên của chúng tôi sẽ đến tận nơi khảo sát và tư vấn lộ trình phù hợp nhất với quy mô và ngành nghề kinh doanh của bạn.</p>
-      <p>Chuyên viên tư vấn: <strong>Phạm Văn Khoa</strong><br />
-      Hotline/Zalo: <strong>0989113602</strong><br />
+      <p>Hotline/Zalo: <strong>0989113602</strong><br />
       Địa chỉ: Viettel Đắk Lắk - Đồng hành cùng doanh nghiệp địa phương.</p>
       <p>Tìm hiểu thêm các giải pháp <a href="/business">doanh nghiệp số</a> hoặc dịch vụ <a href="/blog/post/huong-dan-dang-ky-thanh-lap-doanh-nghiep-moi-nhat-2026">thành lập doanh nghiệp</a> trọn gói.</p>
 
@@ -612,7 +603,7 @@ export const BLOG_POSTS: BlogPost[] = [
     id: '10',
     slug: 'tai-sao-nen-chon-internet-viettel-cho-quan-cafe-dak-lak',
     title: 'Giải pháp Wifi Mesh Viettel cho quán cafe Đắk Lắk: Thu hút khách 2026',
-    excerpt: 'Tại sao quán cafe tại Đắk Lắk nên lắp Wifi Mesh Viettel 2026? Giải pháp phủ sóng toàn diện, ổn định cho hàng trăm khách kết nối cùng lúc. Liên hệ 0989113602.',
+    excerpt: 'Tại sao quán cafe tại Đắk Lắk nên lắp Wifi Mesh Viettel 2026? Giải pháp phủ sóng toàn diện, ổn định cho hàng trăm khách kết nối cùng lúc. Liên hệ hotline 0989113602.',
     content: `
       <p><em>Năm 2026, trải nghiệm Wifi tốc độ cao là yếu tố quyết định sự quay lại của khách hàng tại các quán cafe Buôn Ma Thuột. Giải pháp Wifi Mesh của Viettel giúp quán luôn "full sóng", đáp ứng nhu cầu của hàng trăm khách hàng kết nối cùng lúc mà không bị gián đoạn.</em></p>
 
@@ -632,8 +623,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <h2>Làm thế nào để lắp đặt hệ thống Wifi chuyên dụng cho quán cafe tại Đắk Lắk?</h2>
       <p>Quy trình cực kỳ nhanh chóng. <strong>Nhân Viên Viettel</strong> sẽ đến tận nơi khảo sát không gian quán, tư vấn vị trí đặt thiết bị tối ưu và hỗ trợ lắp đặt hoàn thiện trong vòng 24h.</li>
-      <p>Chuyên viên tư vấn: <strong>Phạm Văn Khoa</strong><br />
-      Hotline: <strong>0989113602</strong><br />
+      <p>Hotline: <strong>0989113602</strong><br />
       Khu vực: Hỗ trợ lắp đặt tại Buôn Ma Thuột và toàn tỉnh Đắk Lắk.</p>
       <p>Tham khảo thêm các gói <a href="/internet-viettel">Internet Viettel</a> hoặc giải pháp <a href="/blog/post/top-5-goi-cuoc-internet-viettel-tot-nhat-cho-van-phong">Wifi cho văn phòng</a>.</p>
 

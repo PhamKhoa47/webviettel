@@ -18,7 +18,7 @@ export default function BusinessRegistration() {
     const schemaData = {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Dịch vụ thành lập doanh nghiệp Viettel Đắk Lắk - Phạm Văn Khoa",
+      "name": "Dịch vụ thành lập doanh nghiệp Viettel Đắk Lắk",
       "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
       "@id": "https://viettel.daklak.vn/business-registration",
       "url": "https://viettel.daklak.vn/business-registration",
@@ -106,7 +106,7 @@ export default function BusinessRegistration() {
     <div className="bg-slate-50 text-slate-900 min-h-screen">
       <SEO 
         title="Thành lập doanh nghiệp Đắk Lắk trọn gói - Tư vấn 2026"
-        description="Dịch vụ thành lập doanh nghiệp tại Đắk Lắk trọn gói, uy tín. Thủ tục nhanh gọn 3-5 ngày. Hỗ trợ pháp lý, con dấu, hóa đơn, chữ ký số bởi Phạm Văn Khoa."
+        description="Dịch vụ thành lập doanh nghiệp tại Đắk Lắk trọn gói, uy tín. Thủ tục nhanh gọn 3-5 ngày. Hỗ trợ pháp lý, con dấu, hóa đơn, chữ ký số."
         keywords="thành lập doanh nghiệp đắk lắk, thành lập công ty buôn ma thuột, dịch vụ kế toán đắk lắk, giấy phép kinh doanh đắk lắk"
       />
       {/* Hero Section */}
@@ -136,7 +136,7 @@ export default function BusinessRegistration() {
               THÀNH LẬP <br /><span className="text-viettel-red">DOANH NGHIỆP ĐẮK LẮK</span>
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto font-medium leading-relaxed">
-              Khởi đầu kinh doanh thuận lợi với dịch vụ tư vấn pháp lý chuyên nghiệp tại Đắk Lắk. Nhanh chóng, uy tín, trọn gói, chi phí tối ưu nhất. Hỗ trợ bởi chuyên viên <Link to="/contact" className="text-viettel-red hover:underline">Phạm Văn Khoa</Link>.
+              Khởi đầu kinh doanh thuận lợi với dịch vụ tư vấn pháp lý chuyên nghiệp tại Đắk Lắk. Nhanh chóng, uy tín, trọn gói, chi phí tối ưu nhất. Hỗ trợ bởi chuyên viên Viettel.
             </p>
             <div className="mt-12 flex flex-wrap justify-center gap-6">
               <Link to="/contact" className="btn-primary px-10 py-4 text-lg">
