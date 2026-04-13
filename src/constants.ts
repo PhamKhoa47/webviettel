@@ -2,7 +2,7 @@ export const BRAND = {
   name: 'Viettel Đắk Lắk',
   phone: '0989.113.602',
   email: 'phamkhoaviettel@gmail.com',
-  address: 'Số 48 Lý Tự Trọng, Phường Tân An, Tỉnh Đắk Lắk, Việt Nam',
+  address: 'Số 48 Lý Tự Trọng, P. Tân An, Đắk Lắk',
   hotlineSupport: '1800.8119',
   workingHours: 'Thứ 2 - Chủ Nhật: 07:30 - 20:00',
   position: 'Chuyên viên Tư vấn Giải pháp Doanh nghiệp',

@@ -23,7 +23,7 @@ export default function Contact() {
         "email": "khoapv47@gmail.com",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Số 48 Lý Tự Trọng, Phường Tân An",
+          "streetAddress": "Số 48 Lý Tự Trọng, P. Tân An",
           "addressLocality": "Buôn Ma Thuột",
           "addressRegion": "Đắk Lắk",
           "postalCode": "63000",

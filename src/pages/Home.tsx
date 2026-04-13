@@ -30,7 +30,7 @@ export default function Home() {
       "telephone": "0989113602",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Số 48 Lý Tự Trọng, Phường Tân An",
+        "streetAddress": "Số 48 Lý Tự Trọng, P. Tân An",
         "addressLocality": "Buôn Ma Thuột",
         "addressRegion": "Đắk Lắk",
         "postalCode": "63000",
@@ -397,7 +397,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] mb-1">Địa chỉ</p>
-                      <p className="text-2xl font-black text-slate-900 tracking-tight">Viettel Đắk Lắk, TP. Buôn Ma Thuột</p>
+                      <p className="text-2xl font-black text-slate-900 tracking-tight">Số 48 Lý Tự Trọng, P. Tân An, Đắk Lắk</p>
                     </div>
                   </div>
                 </div>

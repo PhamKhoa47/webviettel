@@ -97,7 +97,7 @@ export default function PrivacyPolicy() {
               <h2 className="text-2xl font-black text-slate-900 mb-6 uppercase tracking-tight">Liên hệ với chúng tôi</h2>
               <p className="mb-2">Nếu có bất kỳ câu hỏi nào liên quan đến chính sách bảo mật này, bạn có thể liên hệ với chúng tôi theo thông tin dưới đây:</p>
               <p className="font-bold text-slate-900">Viettel Đắk Lắk</p>
-              <p>Địa chỉ: Số 48 Lý Tự Trọng, Phường Tân An, TP. Buôn Ma Thuột, Đắk Lắk</p>
+              <p>Địa chỉ: Số 48 Lý Tự Trọng, P. Tân An, Đắk Lắk</p>
               <p>Hotline: 0989113602</p>
               <p>Email: khoapv47@gmail.com</p>
             </section>
